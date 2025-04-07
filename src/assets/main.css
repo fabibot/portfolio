@@ -1,0 +1,27 @@
+@import './cssReset.css';
+@import './base.css';
+@import '../../node_modules/bootstrap/dist/css/bootstrap-grid.min.css';
+@import '../../node_modules/bootstrap/dist/css/bootstrap.css';
+
+
+.fond-jaune {
+  background-color: var(--color-1);
+}
+.fond-bleu {
+  background-color: var(--color-2);
+}
+.fond-blanc {
+  background-color: white;
+}
+.color-bleu {
+  color: var(--color-2);
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
