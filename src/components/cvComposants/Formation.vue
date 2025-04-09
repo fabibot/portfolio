@@ -1,5 +1,5 @@
 <template>
-    <div class="formation ps-5 py-3">
+    <div class="formation py-3">
         <h2 class="octarine-b"> Formation </h2>
         <div>
             <div v-for="diplome in formation" class="my-3">
@@ -21,7 +21,7 @@ export default {
 <style>
     .formation {
         width: 390px;
-        margin-left: 230px;
+        /* margin-left: 230px; */
     }
     .formation li {
         margin: 20px 0px

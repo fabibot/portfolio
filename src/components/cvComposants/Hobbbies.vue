@@ -1,5 +1,5 @@
 <template>
-    <div class="ps-5 py-3">
+    <div class="py-3">
         <h2 class="octarine-b">Hobbies</h2>
         <div v-for="hobbie in hobbies">
             <span class="">{{ hobbie.nom }}</span> : {{ hobbie.description }}</div>
@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style scoped>
-    .ps-5 {
+    /* .ps-5 {
         margin-left : 254px;
-    }
+    } */
 </style>

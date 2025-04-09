@@ -23,14 +23,16 @@
             <div class="div-experience">
                 <ExperiencesProfessionelles v-bind:experience="info.experience"></ExperiencesProfessionelles>
             </div>
-            <div class="div-formation">
-                <Formation v-bind:formation="info.formation"></Formation>
-            </div>
-            <div class="div-langues">
-                <Langues v-bind:langues="info.langues"></Langues>
-            </div>
-            <div class="div-hobbies">
-                <Hobbies v-bind:hobbies="info.hobbies"></Hobbies>
+            <div class="column3-grid">
+                <div class="div-formation">
+                    <Formation v-bind:formation="info.formation"></Formation>
+                </div>
+                <div class="div-langues">
+                    <Langues v-bind:langues="info.langues"></Langues>
+                </div>
+                <div class="div-hobbies">
+                    <Hobbies v-bind:hobbies="info.hobbies"></Hobbies>
+                </div>
             </div>
         </div>
         <div class="column-4">
@@ -56,6 +58,23 @@
 </template>
 
 <style>
+    .column3-grid {
+        display: grid;
+        grid-template-columns: 35% 1fr;
+    }
+    .div-formation {
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+    
+    .div-langues {
+        grid-row: 2/3;
+    }
+    
+    .div-hobbies {
+        grid-row: 3/4;
+        grid-column: 2/3;
+    }
     .main-grid {
         display: grid;
         grid-template-columns: 5% 40% 1fr 5%;
