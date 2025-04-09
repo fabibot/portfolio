@@ -46,7 +46,10 @@
                 <a :href="info.coordonnees.linkedin.lien" target="_blank">
                 <div class="logo linkedin my-4"></div>
                 </a>
-                <button class="icon-btn logo navette my-4 fond-jaune"></button>
+                <RouterLink to="/projets">
+                    <button class="icon-btn logo navette my-4 fond-jaune" title="explorer les projets"></button>
+                </RouterLink>
+
             </div>
             <div class="home-btn">
                 <button title="télécharger le cv" class="telecharger icon-btn"></button>
