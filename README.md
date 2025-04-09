@@ -27,3 +27,8 @@ npm run dev
 ```sh
 npm run build
 ```
+
+### Credit logos : 
+-  Pixel perfect
+-  edt.im
+-  Mike Zuidgeest
