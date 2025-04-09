@@ -29,16 +29,23 @@ h2 {
   width: 30px;
   height: 30px;
   background-size: contain;
+  background-repeat: no-repeat;
   margin: 10px;
 }
 
 .logo.insta {
-  background-image: url(./images/instagram.png);
+  background-image: url(./logos/instagram.png);
 }
 .logo.github {
-  background-image: url(./images/github.png);
+  background-image: url(./logos/github.png);
 }
 .logo.linkedin {
-  background-image: url(./images/logo-linkedin.png);
+  background-image: url(./logos/logo-linkedin.png);
+}
+.logo.plus {
+  background-image: url(./logos/ajouter.png);
+}
+.logo.navette {
+  background-image: url(./logos/navette2.png);
 }
 
