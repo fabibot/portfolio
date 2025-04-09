@@ -33,6 +33,10 @@ h2 {
   margin: 10px;
 }
 
+.icon-btn {
+  border: none;
+}
+
 .logo.insta {
   background-image: url(./logos/instagram.png);
 }

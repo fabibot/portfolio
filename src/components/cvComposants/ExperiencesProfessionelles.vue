@@ -19,12 +19,6 @@
         margin: 50px;
     }
 
-    /* .fond-jaune {
-        position: absolute;
-        z-index: -1;
-        width: 100px;
-        height: 100%;
-    } */
 </style>
 
 <script>

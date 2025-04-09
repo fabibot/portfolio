@@ -37,6 +37,23 @@
                 <Hobbies v-bind:hobbies="info.hobbies"></Hobbies>
             </div>
         </div>
+        <div class="column-4">
+            <div class="reseaux-btn">
+                <a href="">
+                <div class="logo insta mb-4"></div>
+                </a>
+                <a href="">
+                <div class="logo github my-4"></div>
+                </a>
+                <a href="">
+                <div class="logo linkedin my-4"></div>
+                </a>
+                <button class="icon-btn logo navette my-4 fond-jaune"></button>
+            </div>
+            <div class="home-btn">
+                <button title="télécharger le cv" class="telecharger icon-btn"></button>
+            </div>
+        </div>
 
     </div>
 
@@ -45,7 +62,7 @@
 <style>
     .main-grid {
         display: grid;
-        grid-template-columns: 5% 40% 1fr;
+        grid-template-columns: 5% 40% 1fr 5%;
         column-gap: 15px;
     }
 
@@ -61,6 +78,37 @@
         top: 0;  
         height: min-content;    
     }
+
+    /* btn right */
+    .home-btn {
+    position: fixed;
+    z-index: 2000;
+    bottom: 30px;
+    right: 30px;
+  }
+  .reseaux-btn {
+    position: fixed;
+    z-index: 2000;
+    top: 20px;
+    right: 30px;
+  }
+
+  .logo.navette {
+    box-shadow: 0px 0px 0px 7px var(--color-1);
+    transition: all ease 0.5s
+  }
+
+  button.telecharger {
+    background-image: url(../assets/logos/telecharger.png);
+    background-size: contain;
+    height: 70px;
+    width: 70px;
+    background-color: transparent;
+  }
+  .logo.navette:hover {
+    box-shadow: 0px 0px 0px 14px var(--color-1);
+  }
+    /*....*/
     .div-prenom {
         width: 30px;
         height: 530px;
