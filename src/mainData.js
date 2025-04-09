@@ -7,8 +7,8 @@ const info = {
       mail: 'fabiolabellon.jimenez@gmail.com',
       codePostal : "42 000 Saint-Etienne",
       insta : { nom : "fabiola_crea", lien : "https://www.instagram.com/fabiola_crea/" },
-      linkedin: { nom : "Fabiola Bellon", lien : "https://github.com/fabibot" },
-      git: { nom : "fabibot", lien : "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHZAenncv2f1wAAAZYasofwRKf_3-rC6SGyeX6uwSoZhBLoEdN2wFJ1s-o-OeBnAwnbd92GP5j_h6b2Q_g1beQlKpmeHm8XyuWhAj17TJrlimuHiFFro_y-oEXVogQU1gj86dY=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Ffabiola-bellon-66527920b%2F" },
+      linkedin: { nom : "Fabiola Bellon", lien : "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHZAenncv2f1wAAAZYasofwRKf_3-rC6SGyeX6uwSoZhBLoEdN2wFJ1s-o-OeBnAwnbd92GP5j_h6b2Q_g1beQlKpmeHm8XyuWhAj17TJrlimuHiFFro_y-oEXVogQU1gj86dY=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Ffabiola-bellon-66527920b%2F" },
+      git: { nom : "fabibot", lien : "https://github.com/fabibot"},
     },
     description: `Après un stage de quatre mois chez Diagram Informatique, axé sur l'intégration de maquettes pour le web, je suis à la recherche d'un premier emploi en tant que développeuse front-end. Mon parcours aussi atypique qu'enrichissant, mêlant design, graphisme et informatique, montre à quel point je ne me lasse jamais d'apprendre.`,
     formation : [
