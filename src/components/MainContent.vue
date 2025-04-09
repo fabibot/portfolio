@@ -1,8 +1,6 @@
-<!-- Note pour pour prochaine fois
-descendre la hauteur de "expérience"
-
-
--->
+<!-- vue qu'on a la place, doubler le contenu pour les deux expériences en dev
+ laisser fixe les informations les plus iportant, donc l'entête avec info personnelles et description
+ fixer et non stycky pour la partie qui bouge pas pour qu'elle bouge VRAIMENT PAS -->
 
 <template>
     <div class="main-grid">
@@ -20,24 +18,30 @@ descendre la hauteur de "expérience"
             </div>
             <InfoPersonnelles v-bind:coordonnees="info.coordonnees" class="d-flex align-items-end"></InfoPersonnelles>
 
-            <div class="div-desc py-3">
+            <div class="div-desc py-4">
                 <Description v-bind:description="info.description"></Description>
             </div>
             <div class="div-formation">
                 <Formation v-bind:formation="info.formation"></Formation>
             </div>
+            <div class="div-langues">
+                <Langues v-bind:langues="info.langues"></Langues>
+            </div>
             <div class="div-competence">
                 <Competence v-bind:competence="info.competance"></Competence>        
             </div>
+            <div class="div-hobbies">
+                <Hobbies v-bind:hobbies="info.hobbies"></Hobbies>
+            </div>
         </div>
         <div class="column-3">
-            
-            <div class="div-experience sticky-top">
+            <div class="div-experience sticky-top py-1">
                 <ExperiencesProfessionelles v-bind:experience="info.experience"></ExperiencesProfessionelles>
             </div>
         </div>
-        <div class="div-langues">
-                <Langues v-bind:langues="info.langues"></Langues>
+        
+        <div class="div-reseaux">
+
         </div>
     </div>
    
@@ -46,20 +50,18 @@ descendre la hauteur de "expérience"
 <style>
     .main-grid {
         display: grid;
-        grid-template-columns: 5% 40% 55%;
-        column-gap: 15px;
-        /* height: 100vh;
-        overflow: hidden;  */
+        grid-template-columns: 5% 40% 1fr;
+        column-gap: 25px;
     }
     .column-2 {
         display: grid;
         grid-template-columns: 138px 1fr;
         grid-template-rows: 145px 101px 1fr;
-        column-gap: 15px;
+        column-gap: 25px;
         
     }
     .column-3 {
-        padding: 30px;
+        /* padding: 30px; */
     }
     .div-prenom {
         grid-row: 1 / 4;
@@ -74,7 +76,7 @@ descendre la hauteur de "expérience"
     }
     .div-prenom  h1 {
         position: absolute;
-        top : -65px;
+        top : -50px;
         left: 22px;
         text-wrap: nowrap;
     }
@@ -100,20 +102,23 @@ descendre la hauteur de "expérience"
     .div-experience {
         grid-row: 3 / 4;
         grid-column: 4/ 5;
-        margin-top: 150px;
     }
     .div-formation {
         grid-row: 4 / 5;
         grid-column: 2 / 3;
     }
     .div-competence {
-        grid-row : 5 / 6;
-        grid-column: 1 / 3;
+        grid-row : 6 / 7;
+        grid-column: 2 / 3;
     }
     .div-langues {
         display: flex;
-        justify-content: end;
-        margin-top: 150px;
+        grid-row: 5 / 6;
+        grid-column: 1 / 2;
+    }
+    .div-hobbies {
+        grid-row: 7 / 8;
+        grid-column: 1 / 3;
     }
 </style>
 
@@ -124,6 +129,7 @@ import ExperiencesProfessionelles from './cvComposants/ExperiencesProfessionelle
 import Description from './cvComposants/Description.vue';
 import Competence from './cvComposants/Competence.vue';
 import Langues from './cvComposants/Langues.vue';
+import Hobbies from './cvComposants/Hobbbies.vue';
 
 defineProps({
   titre: {
@@ -169,7 +175,7 @@ experience : [
     {duree : " Janvier 2022 And Jacob, Mexique", description: "Conception de produits autour des arts de la table. Élaboration de dessins, de rendu 3D et de plans sur Rhinocéros et Keyshot."},
     {duree : " Octobre 2020 Distorsion, Auvergne Rhône-Alpes", description: "Conception d’une identité graphique pour une recyclerie. Conception d’un logo et d’illustrations à l’aide du logiciel Illustrator."},
 ],
-hobbie : [
+hobbies : [
     { nom: "Escalade", description: " pratique du bloc et de la voie" },
     { nom: "Couture", description: " Confection de vêtements et d’accessoire" }
 ]

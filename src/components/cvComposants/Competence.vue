@@ -1,7 +1,8 @@
 <template>
-    <div class="p-4">
+    <div class="py-3">
         <h2 class="octarine-b"> Compétences </h2>
         <div>
+            (mettre à jour)
             <div v-for="skill in competence" class="">
                 {{ skill.nom }} :<span class="cascadia-sb fond-bleu">{{ skill.niveau }}</span>
             </div> 

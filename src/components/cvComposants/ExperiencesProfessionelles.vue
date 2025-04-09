@@ -1,5 +1,5 @@
 <template>
-    <div class="div-experience fond-blanc p-4">
+    <div class="experience fond-blanc p-4">
         <div class="fond-jaune"></div>
         <h2 class="octarine-b">Expériences professionnelles</h2>
         <div>
@@ -12,7 +12,7 @@
 </template>
 
 <style scoped >
-    .div-experience {
+    .experience {
         width: 610px;
         z-index: 2;
         background: linear-gradient(to right, var(--color-1) 0px 100px, white 100px 100%);

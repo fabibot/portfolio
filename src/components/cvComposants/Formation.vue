@@ -1,5 +1,5 @@
 <template>
-    <div class="formation p-4">
+    <div class="formation">
         <h2 class="octarine-b"> Formation </h2>
         <div>
             <div v-for="diplome in formation" class="my-3">
