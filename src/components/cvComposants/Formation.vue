@@ -21,6 +21,7 @@ export default {
 <style>
     .formation {
         width: 390px;
+        margin-left: 230px;
     }
     .formation li {
         margin: 20px 0px

@@ -145,10 +145,7 @@
         grid-row: 3 / 4;
         grid-column: 4/ 5;
     }
-    .div-competence {
-        grid-row : 4 / 5;
-        grid-column: 1 / 3;
-    }
+
 </style>
 
 <script setup>

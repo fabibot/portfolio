@@ -13,3 +13,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+    .ps-5 {
+        margin-left : 254px;
+    }
+</style>
