@@ -1,14 +1,12 @@
-<!-- vue qu'on a la place, doubler le contenu pour les deux expériences en dev
- laisser fixe les informations les plus iportant, donc l'entête avec info personnelles et description
- fixer et non stycky pour la partie qui bouge pas pour qu'elle bouge VRAIMENT PAS -->
+<!--todo : vue qu'on a la place, doubler le contenu pour les deux expériences en dev -->
 
 <template>
     <div class="main-grid">
         <div class="column-1">
             <div class="fond-jaune div-prenom sticky-top">
-                <div>
-                    <h1 class="octarine-b">{{ info.prenom }} {{ info.nom }}</h1>
-                </div>
+                <div class="rotate-prenom">
+                <h1 class="octarine-b">{{ info.prenom }} {{ info.nom }}</h1>
+            </div>
             </div>
         </div>
         <div class="column-2">
@@ -39,9 +37,9 @@
                 <Hobbies v-bind:hobbies="info.hobbies"></Hobbies>
             </div>
         </div>
-        
+
     </div>
-   
+
 </template>
 
 <style>
@@ -49,6 +47,10 @@
         display: grid;
         grid-template-columns: 5% 40% 1fr;
         column-gap: 15px;
+    }
+
+    .column-1 {
+        grid-row: 1 / 4;
     }
     .column-2 {
         display: grid;
@@ -59,28 +61,19 @@
         top: 0;  
         height: min-content;    
     }
-    .column-2 div {
-        /* position: fixed; */
-        /* top:0 */
-    }
-    .column-3 {
-        /* padding: 30px; */
-    }
     .div-prenom {
-        grid-row: 1 / 4;
         width: 30px;
         height: 530px;
         padding: 10px;
-        background: linear-gradient(to right, var(--color-1) 0px 30px, white 30px 100%);
-
     }
-    .div-prenom > div {
+    
+    .rotate-prenom {
         transform: rotate(90deg);
     }
     .div-prenom  h1 {
         position: absolute;
-        top : -50px;
-        left: 22px;
+        top: -51px;
+        left: 20px;
         text-wrap: nowrap;
 
     }
