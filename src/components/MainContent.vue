@@ -75,6 +75,10 @@
         height: min-content;    
     }
 
+    .column-3 {
+        margin: 50px
+    }
+
     /* btn right */
     .home-btn {
     position: fixed;
