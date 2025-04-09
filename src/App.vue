@@ -14,7 +14,10 @@
     <MainContent titre="CV Fabiola"/>
   </main>
   <div class="homeButtons">
-    <button title="télécharger le cv">Télécharger</button>
+    <div class="logo insta"></div>
+    <div class="logo github"></div>
+    <div class="logo linkedin mb-4"></div>
+    <button title="télécharger le cv" class="telecharger"></button>
   </div>
 </template>
 
@@ -22,8 +25,20 @@
   .homeButtons {
     position: fixed;
     z-index: 2000;
-    bottom: 10px;
-    right: 10px;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button.telecharger {
+    background-image: url(./assets/images/telecharger.png);
+    background-size: contain;
+    height: 70px;
+    width: 70px;
+    background-color: transparent;
+    border: none;
   }
 </style>
 

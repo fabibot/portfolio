@@ -25,3 +25,20 @@ h2 {
   font-size: 3rem;
 }
 
+.logo {
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  margin: 10px;
+}
+
+.logo.insta {
+  background-image: url(./images/instagram.png);
+}
+.logo.github {
+  background-image: url(./images/github.png);
+}
+.logo.linkedin {
+  background-image: url(./images/logo-linkedin.png);
+}
+

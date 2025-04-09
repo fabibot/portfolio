@@ -1,5 +1,5 @@
 <template>
-    <div class="py-3">
+    <div class="pt-5">
         <h2 class="octarine-b"> Compétences </h2>
         <div>
             (mettre à jour)
