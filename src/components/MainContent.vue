@@ -37,13 +37,13 @@
         </div>
         <div class="column-4">
             <div class="reseaux-btn">
-                <a href="">
+                <a :href="info.coordonnees.insta.lien" target="_blank">
                 <div class="logo insta mb-4"></div>
                 </a>
-                <a href="">
+                <a :href="info.coordonnees.git.lien" target="_blank">
                 <div class="logo github my-4"></div>
                 </a>
-                <a href="">
+                <a :href="info.coordonnees.linkedin.lien" target="_blank">
                 <div class="logo linkedin my-4"></div>
                 </a>
                 <button class="icon-btn logo navette my-4 fond-jaune"></button>
