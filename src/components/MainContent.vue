@@ -1,5 +1,3 @@
-<!--todo : vue qu'on a la place, doubler le contenu pour les deux expériences en dev -->
-
 <template>
     <div class="main-grid">
         <div class="column-1">
@@ -18,8 +16,6 @@
 
             <div class="div-desc py-4">
                 <Description v-bind:description="info.description"></Description>
-            </div>
-            <div class="div-competence">
                 <Competence v-bind:competence="info.competance"></Competence>        
             </div>
         </div>
@@ -72,7 +68,7 @@
     .column-2 {
         display: grid;
         grid-template-columns: 138px 1fr;
-        grid-template-rows: 145px 101px 150px 250px;
+        grid-template-rows: 145px 101px 1fr;
         column-gap: 25px;  
         position: sticky;
         top: 0;  
@@ -95,6 +91,7 @@
 
   .logo.navette {
     box-shadow: 0px 0px 0px 7px var(--color-1);
+    border-radius: 2px;
     transition: all ease 0.5s
   }
 
@@ -148,24 +145,10 @@
         grid-row: 3 / 4;
         grid-column: 4/ 5;
     }
-    /* .div-formation {
-        grid-row: 4 / 5;
-        grid-column: 2 / 3;
-    }*/
     .div-competence {
         grid-row : 4 / 5;
         grid-column: 1 / 3;
     }
-    /*
-    .div-langues {
-        display: flex;
-        grid-row: 5 / 6;
-        grid-column: 1 / 2;
-    }
-    .div-hobbies {
-        grid-row: 7 / 8;
-        grid-column: 1 / 3;
-    } */
 </style>
 
 <script setup>
@@ -176,6 +159,7 @@ import Description from './cvComposants/Description.vue';
 import Competence from './cvComposants/Competence.vue';
 import Langues from './cvComposants/Langues.vue';
 import Hobbies from './cvComposants/Hobbbies.vue';
+import info from '../mainData';
 
 defineProps({
   titre: {
@@ -184,47 +168,5 @@ defineProps({
   },
 })
 
-const info = {
-  nom: 'Bellon',
-  prenom: 'Fabiola',
-  coordonnees: {
-    numero: '07 71 02 90 81',
-    dateNaissance: '27/12/1999',
-    mail: 'fabiolabellon.jimenez@gmail.com',
-    codePostal : "42 000 Saint-Etienne",
-    insta : { nom : "fabiola_crea", lien : "www" },
-    linkedin: { nom : "Fabiola Bellon", lien : "www" },
-    git: { nom : "fabibot", lien : "www" },
-  },
-  description: `Après un stage de quatre mois chez Diagram Informatique, axé sur l'intégration de maquettes pour le web, je suis à la recherche d'un premier emploi en tant que développeuse front-end. Mon parcours aussi atypique qu'enrichissant, mêlant design, graphisme et informatique, montre à quel point je ne me lasse jamais d'apprendre.`,
-  formation : [
-        {annee: '2024', nom: 'The Odin Project, Full Stack Javascript'},
-        {annee: '2023', nom: 'Harvard University CS50x, Introduction to Computer Science'},
-        {annee: '2023', nom: 'DNSEP a l’Ecole Supérieur d’Art et de Design de Saint-Etienne, mention objet'},
-        {annee: '2021', nom: 'DNA à l’école supérieure d’art et de design de SaintÉtienne, option objet et numérique'},
-    ],
-  langues : [
-    { langue: 'Espagnol', niveau : "Bilingue" },
-    { langue: 'Anglais', niveau : "Professionel"}
-  ],
-  competance : [
-    { nom: "Vue.js", niveau: 4 },
-    { nom: "Bootstrap", niveau: 3 },
-    { nom: "Twig/Symfony", niveau: 2 },
-    { nom: "Git", niveau: 3 },
-    { nom: "HTML, CSS, JavaScript", niveau: 4 },
-    { nom: "+ Initiations en Python, Flask, SQL et C++", niveau: 0 }
-],
-experience : [
-    {duree : "Octobre 2024 à Mars 2025, Illiwap, Saint-Etienne", description: "(A corriger) Travail sur la migration, notament du front. Gestion des tiquets et des remonté des clients. Découvert de flutter et du back. "},
-    {duree : " mai-aôut 2024 Diagram Informatique, Saint-Etienne", description: "Création d'un site internet avec Vue.js. Intégration de maquettes avec Symfony, Twig et Bootstrap."},
-    {duree : " Janvier 2022 And Jacob, Mexique", description: "Conception de produits autour des arts de la table. Élaboration de dessins, de rendu 3D et de plans sur Rhinocéros et Keyshot."},
-    {duree : " Octobre 2020 Distorsion, Auvergne Rhône-Alpes", description: "Conception d’une identité graphique pour une recyclerie. Conception d’un logo et d’illustrations à l’aide du logiciel Illustrator."},
-],
-hobbies : [
-    { nom: "Escalade", description: " pratique du bloc et de la voie" },
-    { nom: "Couture", description: " Confection de vêtements et d’accessoire" }
-]
 
-}
 </script>
