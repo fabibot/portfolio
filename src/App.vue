@@ -70,22 +70,7 @@ import info from './mainData';
     right: 30px;
   }
 
-  .logo.navette {
-    box-shadow: 0px 0px 0px 7px var(--color-1);
-    border-radius: 2px;
-    transition: all ease 0.5s
-  }
 
-  button.telecharger {
-    background-image: url(./assets/logos/telecharger.png);
-    background-size: contain;
-    height: 70px;
-    width: 70px;
-    background-color: transparent;
-  }
-  .logo.navette:hover {
-    box-shadow: 0px 0px 0px 14px var(--color-1);
-  }
     /*....*/
 
   @media (max-width: 1170px) {

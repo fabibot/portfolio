@@ -28,6 +28,15 @@
                 <div class="div-hobbies">
                     <Hobbies v-bind:hobbies="info.hobbies"></Hobbies>
                 </div>
+                <div class="div-projet mt-5">
+                    <h2 class="octarine-b">Portfolio</h2>
+                    <RouterLink to="/projets">
+                        <div class="d-flex align-items-center">
+                            <div class="icon-btn logo navette fond-jaune"></div>
+                            <p class="m-0 ms-2"> Découvrir le portfolio </p>
+                        </div>
+                    </RouterLink>
+                </div>
             </div>
         </div>
         
@@ -105,6 +114,11 @@
     .div-experience {
         grid-row: 3 / 4;
         grid-column: 4/ 5;
+    }
+
+    .div-projet {
+        grid-row: 4/5;
+        grid-column: 1/3;
     }
 
     @media (max-width: 1290px) {
