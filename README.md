@@ -32,3 +32,5 @@ npm run build
 -  Pixel perfect
 -  edt.im
 -  Mike Zuidgeest
+- jojooid
+-  Arafat Uddin

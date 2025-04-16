@@ -61,7 +61,11 @@ h2 {
   background-image: url(./logos/bouton-retour.png);
   background-color: transparent;
 }
-.logo.navette {
+
+.logo.cv {
+  background-image: url(./logos/cv-et-cv.png);
+}
+.logo.navette, .logo.cv {
   box-shadow: 0px 0px 0px 7px var(--color-1);
   border-radius: 2px;
   transition: all ease 0.5s
@@ -74,7 +78,7 @@ button.telecharger {
   width: 70px;
   background-color: transparent;
 }
-.logo.navette:hover {
+.logo.navette:hover, .logo.cv:hover {
   box-shadow: 0px 0px 0px 14px var(--color-1);
 }
 

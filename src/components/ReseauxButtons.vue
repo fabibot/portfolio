@@ -9,21 +9,43 @@
           <a :href="info.coordonnees.linkedin.lien" target="_blank">
           <div class="logo linkedin my-4"></div>
           </a>
-          <RouterLink to="/projets">
-              <button class="icon-btn logo navette my-4 fond-jaune" title="explorer les projets"></button>
+          <RouterLink :to="getNextPage()">
+              <button :class="{'icon-btn': true, 'logo': true, 'my-4': true, 'fond-jaune': true, [getNextPageIcon()]: true}" :title="`explorer le ${getNextPageTitle()}`"></button>
           </RouterLink>
       </div>
       <div class="download-btn">
           <button title="télécharger le cv" class="telecharger icon-btn"></button>
       </div>
+
+      <div>
+  </div>
 </template>
 
-<script>
-    export default {
-    props: {
-        info: Object,
-    },
-    };
+<script setup>
+    const props = defineProps({
+        info: Object
+    })
+
+    import { useRoute } from 'vue-router'
+    const route = useRoute()
+
+    function getNextPage() {
+    return route.name === 'Projets'
+        ? { name: 'Cv' }
+        : { name: 'Projets' }
+    }
+
+    function getNextPageIcon() {
+    return route.name === 'Projets'
+        ? 'cv'
+        : 'navette'
+    }
+
+    function getNextPageTitle() {
+    return route.name === 'Projets'
+        ? 'cv'
+        : 'portfolio'
+    }
 </script>
 
 <style>
@@ -31,7 +53,7 @@
     grid-column: 3/4;
    }
    .download-btn {
-    position: sticky;
+    position: fixed;
     z-index: 2000;
     bottom: 30px;
     right: 30px;
