@@ -2,9 +2,9 @@
     <div class="formation py-3">
         <h2 class="octarine-b"> Formation </h2>
         <div>
-            <div v-for="diplome in formation" class="my-3">
+            <p v-for="diplome in formation" class="my-3">
                 <span class="cascadia-sb fond-bleu p-1">{{ diplome.annee }}</span> - {{ diplome.nom }}
-            </div> 
+            </p> 
         </div>
     </div>
 </template>
@@ -19,10 +19,6 @@ export default {
 </script>
 
 <style>
-    .formation {
-        width: 390px;
-        /* margin-left: 230px; */
-    }
     .formation li {
         margin: 20px 0px
     }

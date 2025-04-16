@@ -1,25 +1,20 @@
 <template>
-    <div class="main-grid">
-        <div class="column-1">
-            <div class="fond-jaune div-prenom sticky-top">
-                <div class="rotate-prenom">
-                <h1 class="octarine-b">{{ info.prenom }} {{ info.nom }}</h1>
-            </div>
-            </div>
-        </div>
+    <div class="main-content-grid">
         <div class="column-2">
-            <div class="div-image"></div>
-            <div class="div-nom">
+            <div class="div-image d-flex justify-content-center">
+                <div class="div-image-image"></div>
+            </div>
+            <div class="div-nom ps-3">
                 <h1 class="color-bleu octarine-b">Developpeuse Front-end</h1>
             </div>
-            <InfoPersonnelles v-bind:coordonnees="info.coordonnees" class="d-flex align-items-end"></InfoPersonnelles>
+            <InfoPersonnelles v-bind:coordonnees="info.coordonnees" class="d-flex align-items-end ps-3 div-info"></InfoPersonnelles>
 
             <div class="div-desc py-4">
                 <Description v-bind:description="info.description"></Description>
                 <Competence v-bind:competence="info.competance"></Competence>        
             </div>
         </div>
-        <div class="column-3">
+        <div class="column-3  mt-5 m-3">
             <div class="div-experience">
                 <ExperiencesProfessionelles v-bind:experience="info.experience"></ExperiencesProfessionelles>
             </div>
@@ -35,27 +30,7 @@
                 </div>
             </div>
         </div>
-        <div class="column-4">
-            <div class="reseaux-btn">
-                <a :href="info.coordonnees.insta.lien" target="_blank">
-                <div class="logo insta mb-4"></div>
-                </a>
-                <a :href="info.coordonnees.git.lien" target="_blank">
-                <div class="logo github my-4"></div>
-                </a>
-                <a :href="info.coordonnees.linkedin.lien" target="_blank">
-                <div class="logo linkedin my-4"></div>
-                </a>
-                <RouterLink to="/projets">
-                    <button class="icon-btn logo navette my-4 fond-jaune" title="explorer les projets"></button>
-                </RouterLink>
-
-            </div>
-            <div class="home-btn">
-                <button title="télécharger le cv" class="telecharger icon-btn"></button>
-            </div>
-        </div>
-
+        
     </div>
 
 </template>
@@ -78,60 +53,19 @@
         grid-row: 3/4;
         grid-column: 2/3;
     }
-    .main-grid {
+    .main-content-grid {
         display: grid;
-        grid-template-columns: 5% 40% 1fr 5%;
+        grid-template-columns: 50% 50%;
         column-gap: 15px;
-    }
-
-    .column-1 {
-        grid-row: 1 / 4;
     }
     .column-2 {
         display: grid;
-        grid-template-columns: 138px 1fr;
-        grid-template-rows: 145px 101px 1fr;
-        column-gap: 25px;  
+        grid-template-columns: 20% 80%;
         position: sticky;
         top: 0;  
         height: min-content;    
     }
-
-    .column-3 {
-        margin: 50px
-    }
-
-    /* btn right */
-    .home-btn {
-    position: fixed;
-    z-index: 2000;
-    bottom: 30px;
-    right: 30px;
-  }
-  .reseaux-btn {
-    position: fixed;
-    z-index: 2000;
-    top: 20px;
-    right: 30px;
-  }
-
-  .logo.navette {
-    box-shadow: 0px 0px 0px 7px var(--color-1);
-    border-radius: 2px;
-    transition: all ease 0.5s
-  }
-
-  button.telecharger {
-    background-image: url(../assets/logos/telecharger.png);
-    background-size: contain;
-    height: 70px;
-    width: 70px;
-    background-color: transparent;
-  }
-  .logo.navette:hover {
-    box-shadow: 0px 0px 0px 14px var(--color-1);
-  }
-    /*....*/
+   
     .div-prenom {
         width: 30px;
         height: 530px;
@@ -150,9 +84,14 @@
     }
     .div-image {
         grid-row: 1 / 3;
+    }
+    .div-image-image {
         background-image: url(../assets/images/P1130427-gris.JPG);
-        background-position: center;
-        background-size: 165%;
+        background-position: 50% 32%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
     }
     .div-nom {
         grid-row: 1 / 2;
@@ -163,14 +102,65 @@
         grid-column: 1 / 3;
     }
 
-    .div-info {
-        grid-row: 2 / 3;
-        grid-column: 2/ 3;
-    }
     .div-experience {
         grid-row: 3 / 4;
         grid-column: 4/ 5;
     }
+
+    @media (max-width: 1290px) {
+    .div-nom {
+      grid-column: 1/3;
+    }
+    .div-image {
+        grid-row: 2/3;
+
+    }
+    .div-image-image {
+        width: 65%;
+    }
+    .div-desc {
+        margin-left: 15px;
+    }
+    .div-info {
+        padding: 0 !important;
+    }
+  }
+
+  @media (max-width: 1170px) {
+    .column-2 h1 {
+        font-size: 2.5rem;
+    }
+    .column-2 {
+        width: 50%;
+        position: fixed;
+        bottom: 0;
+        top : auto;
+    }
+    .column-3 {
+        grid-column: 2/3;
+    }
+  }
+  @media (max-width: 1065px) {
+    .main-content-grid {
+        display: block;
+    }
+    .column-2 {
+        width: auto;
+        position: relative;
+        padding: 10px 50px;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .div-image-image {
+       display: none;
+    }
+    .div-info {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        margin-left: 15px;
+    }
+  }
 
 </style>
 

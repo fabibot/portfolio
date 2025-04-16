@@ -31,7 +31,7 @@ function getImagePath (filename) {
 
 <style scoped>
     .projet-index {
-        background-color: var(--color-3);
+        /* background-color: var(--color-3); */
         height: 100vh;
     }
     .grid-projet {
