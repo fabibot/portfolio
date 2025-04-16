@@ -32,7 +32,6 @@ import info from './mainData';
     height: min-content;
     display: none;
     background: linear-gradient(to right, var(--color-1) 0px 29px, white 10px 100%);
-
   }
 
   .main-grid {
@@ -77,10 +76,9 @@ import info from './mainData';
       h1 {
         position: inherit;
         font-size: 2rem;
-
       }
     }
- 
+
     .column-btn {
       flex-direction: row !important;
       justify-content: end !important;
@@ -92,9 +90,6 @@ import info from './mainData';
     .mini-nom {
       display: block;
     }
-  }
-  @media (max-width: 560px) {
-   
   }
 </style>
 
