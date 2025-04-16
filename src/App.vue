@@ -1,4 +1,5 @@
 <script setup>
+import ReseauxButtons from './components/ReseauxButtons.vue';
 import info from './mainData';
 
 </script>
@@ -17,28 +18,11 @@ import info from './mainData';
         </div>
     </div>
     <div class="column-btn  sticky-top d-flex flex-column justify-content-between">
-      <div class="reseaux-btn sticky-top">
-          <a :href="info.coordonnees.insta.lien" target="_blank">
-          <div class="logo insta mb-4 my-4"></div>
-          </a>
-          <a :href="info.coordonnees.git.lien" target="_blank">
-          <div class="logo github my-4"></div>
-          </a>
-          <a :href="info.coordonnees.linkedin.lien" target="_blank">
-          <div class="logo linkedin my-4"></div>
-          </a>
-          <RouterLink to="/projets">
-              <button class="icon-btn logo navette my-4 fond-jaune" title="explorer les projets"></button>
-          </RouterLink>
-      </div>
-      <div class="download-btn">
-          <button title="télécharger le cv" class="telecharger icon-btn"></button>
-      </div>
+      <ReseauxButtons v-bind:info="info"></ReseauxButtons>
     </div>
     <div class="column-content">
       <RouterView></RouterView>
-    </div>
-    
+    </div>    
   </div>
 </template>
 
@@ -59,20 +43,7 @@ import info from './mainData';
       grid-column: 2/3;
       grid-row: 1/2;
     }
-   /*column btn  */
-   .column-btn {
-    grid-column: 3/4;
-   }
-   .download-btn {
-    position: sticky;
-    z-index: 2000;
-    bottom: 30px;
-    right: 30px;
-  }
-
-
-    /*....*/
-
+   
   @media (max-width: 1170px) {
     .main-grid {
       grid-template-columns: 50% 50%;
@@ -109,23 +80,11 @@ import info from './mainData';
 
       }
     }
-    .reseaux-btn {
-      display: flex;
-    }
+ 
     .column-btn {
       flex-direction: row !important;
       justify-content: end !important;
       background-color: white;
-      .download-btn {
-        right: 0px;
-        margin: 0px 20px;
-        display: flex;
-        align-items: center;
-      }
-      button.telecharger {
-        width: 45px;
-        height: 45px;
-      } 
     }
     .div-prenom {
       display: none;

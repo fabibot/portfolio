@@ -68,7 +68,7 @@ h2 {
 }
 
 button.telecharger {
-  background-image: url(./assets/logos/telecharger.png);
+  background-image: url(./logos/telecharger.png);
   background-size: contain;
   height: 70px;
   width: 70px;
