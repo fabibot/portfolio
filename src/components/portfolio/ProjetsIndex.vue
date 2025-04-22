@@ -6,15 +6,15 @@
         </RouterLink>
         <h1>Explorez les projets</h1>
     </div>
-    <div>
-        <div class="m-5">
+    <div class="d-flex flex-column align-items-center">
+        <div class="m-5 w-75">
             <ProjetEpingle :projetEpingle="projetList[1]"></ProjetEpingle>
         </div>
-        <div class="m-5">
+        <div class="m-5 w-75">
             <Deambulations :projetDeambulation="[projetList[0], projetList[2], projetList[1]]"></Deambulations>
         </div>
-        <div class="m-5">
-            <BeauxArts></BeauxArts>
+        <div class="m-5 w-75">
+            <BeauxArts :projetBeauxArts="[projetList[3], projetList[4], projetList[5]]"></BeauxArts>
         </div>
     </div>
     <!-- <div class="grid-projet">
@@ -52,7 +52,7 @@ function getImagePath (filename) {
     }
 
     .header-epingle {
-        margin: 0 0 100px 0;
+        margin: 0 0 40px 0;
     }
 
     .grid-projet {

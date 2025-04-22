@@ -6,7 +6,7 @@ import info from './mainData';
 
 <template>
   <div class="main-grid">
-    <div class="column-nom position-fixed w-100">
+    <div class="column-nom position-fixed">
       <div class="mini-nom m-4 mt-3 p-1">
               <div class="octarine-b">Fabiola</div>
               <div class="octarine-b">Bellon</div>
@@ -53,6 +53,7 @@ import info from './mainData';
       top: 0;
       background-color: white;
       z-index: 3;
+      width: 100%;
     }
     .column-btn {
       grid-row: 1/2;
