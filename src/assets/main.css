@@ -38,6 +38,10 @@ h2 {
   height: 45px;
 }
 
+.position-fixed {
+  position: fixed;
+}
+
 .icon-btn {
   border: none;
 }
@@ -82,3 +86,7 @@ button.telecharger {
   box-shadow: 0px 0px 0px 14px var(--color-1);
 }
 
+.img-projet {
+  border-radius: 50%;
+  max-width: 180px;
+}

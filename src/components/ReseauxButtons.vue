@@ -58,6 +58,15 @@
     bottom: 30px;
     right: 30px;
   }
+
+  @media (min-width: 1170px) {
+    .reseaux-btn {
+        position: fixed;
+        top: 0;
+        right: 10px;
+
+    }
+  }
   @media (max-width: 1170px) {
     .reseaux-btn {
       display: flex;

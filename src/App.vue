@@ -6,16 +6,16 @@ import info from './mainData';
 
 <template>
   <div class="main-grid">
-    <div class="column-nom">
+    <div class="column-nom position-fixed w-100">
       <div class="mini-nom m-4 mt-3 p-1">
               <div class="octarine-b">Fabiola</div>
               <div class="octarine-b">Bellon</div>
-          </div>
-        <div class="fond-jaune div-prenom sticky-top">
-            <div class="rotate-prenom">
-              <h1 class="octarine-b">{{ info.prenom }} {{ info.nom }}</h1>
-          </div>
+      </div>
+      <div class="fond-jaune div-prenom sticky-top">
+          <div class="rotate-prenom">
+            <h1 class="octarine-b">{{ info.prenom }} {{ info.nom }}</h1>
         </div>
+      </div>
     </div>
     <div class="column-btn  sticky-top d-flex flex-column justify-content-between">
       <ReseauxButtons v-bind:info="info"></ReseauxButtons>
