@@ -1,10 +1,10 @@
 <template>
     <div class="d-flex justify-content-center">
         <div>
-            <div class="d-flex m-5 align-items-center">
+            <div class="d-flex align-items-center">
                 <div v-for="(projet, index) in projetBeauxArts">
                     <div :class="`img-${index}`">
-                        <img :src="getImagePath(projet.image)" alt="" class="img-projet m-2">
+                        <img :src="getImagePath(projet.image)" alt="" class="img-projet">
                     </div>
                 </div>
             </div>
@@ -28,29 +28,43 @@ function getImagePath (filename) {
 </script>
 
 <style scoped>
-    .img-0 img {
-        width: 180px;
-    }
-
-    .img-1 img {
-        width: 80px;
-        border: solid rgba(176, 176, 176, 0.458);
-    }
-
-    .img-2 img {
-        width: 50px;
+    .img-0, .img-1, .img-2 {
+        position: relative;
     }
 
     .img-0 {
+        left: 30px;
         background-image: url(../../assets/images/gribouillis/gribouilli-eclat-2.png);
         background-size: contain;
         background-repeat: no-repeat;
         padding: 50px 30px 30px 60px;
+        animation: 1s mouvement-eclat linear infinite;
+    }
+    .img-0 img {
+        width: 165px;
+        animation: 1s static-eclat linear infinite;
+    }
+    
+    .img-1 {
+        top: -85px;
+    }
+    .img-1 img {
+        width: 60px;
+        border: solid rgba(176, 176, 176, 0.458);
     }
 
-    .img-1 {
+    .img-2 {
+        top: 86px;
+        left: -19px;
         background-image: url(../../assets/images/gribouillis/gribouilli-borderDashed-3.png);
         background-size: contain;
-        padding: 15px;
+        padding: 28px;
+        animation: micro-orbite 15s linear infinite;
     }
+    .img-2 img {
+        width: 100px;
+        animation: micro-orbite-reverse 15s linear infinite;
+
+    }
+
 </style>

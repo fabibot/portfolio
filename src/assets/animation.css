@@ -1,0 +1,62 @@
+@keyframes micro-orbite {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+    }
+
+    @keyframes micro-orbite-reverse {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(-360deg); }
+    }
+
+
+    @keyframes mouvement-eclat {
+        from {
+            transform: rotate(0deg);
+        }
+        50% {
+            transform: rotate(3deg);
+    
+        }
+        to {
+            transform: rotate(0deg);
+        }
+        }
+    
+    @keyframes static-eclat {
+        from {
+            transform: rotate(0deg);
+        }
+        50% {
+            transform: rotate(-3deg);
+    
+        }
+        to {
+            transform: rotate(0deg);
+        }
+        }
+    
+        
+    @keyframes mouvement-scale {
+        from {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.25);
+        }
+        to {
+            transform: scale(1);
+        }
+        }
+    
+    @keyframes static-scale {
+        from {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(0.8);
+    
+        }
+        to {
+            transform: scale(1);
+        }
+    }

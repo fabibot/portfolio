@@ -27,17 +27,6 @@ function getImagePath (filename) {
     .img-Abysse, .img-Bauhaus, .img-Time {
         position: relative;
     }
-   .img-Abysse img {
-        width: 80px;
-    }
-
-    .img-Time img {
-        width: 100px;
-    }
-
-    .img-Bauhaus img {
-        width: 150px;
-    }
 
     .img-Abysse {
         top: 60px;
@@ -45,6 +34,13 @@ function getImagePath (filename) {
         padding: 20px;
         background-image: url(../../assets/images/gribouillis/gribouilli-borderDashed-2.png);
         background-size: contain;
+        animation: 3s mouvement-scale linear infinite;
+
+    }
+   .img-Abysse img {
+        width: 80px;
+        animation: 3s static-scale linear infinite;
+
     }
 
     .img-Time {
@@ -52,10 +48,22 @@ function getImagePath (filename) {
         left: 20px
     }
 
+    .img-Time img {
+        width: 100px;
+    }
+
     .img-Bauhaus {
         top: 60px;
         padding: 35px;
         background-image: url(../../assets/images/gribouillis/gribouilli-eclat-1.png);
         background-size: contain;
+        animation: 1s mouvement-eclat linear infinite;
     }
+    .img-Bauhaus img {
+        width: 150px;
+        animation: 1s static-eclat linear infinite;
+    }
+
+    
+
 </style>

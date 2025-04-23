@@ -2,6 +2,7 @@
 @import './base.css';
 @import '../../node_modules/bootstrap/dist/css/bootstrap-grid.min.css';
 @import '../../node_modules/bootstrap/dist/css/bootstrap.css';
+@import './animation.css';
 
 
 .fond-jaune {

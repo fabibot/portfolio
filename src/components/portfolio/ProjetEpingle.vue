@@ -3,21 +3,11 @@
         <div class="p-5 image-projet-epingle background-gribouilli">
             <img :src="getImagePath(projetEpingle.image)" alt="" class="img-projet static-content">
         </div>
-        <div class="mon-pref">
+        <div class="d-block">
+            <div class="mon-pref"></div>
+            <CardProjet :titre="projetEpingle.titre" :description="projetEpingle.description" class="ms-5"></CardProjet>
         </div>
-        <CardProjet :titre="projetEpingle.titre" :description="projetEpingle.description" class="ms-5"></CardProjet>
     </div>
-    <!-- todo 
-     - revoir le display pour faire plutôt une grid et placer correctement la fleche mon pref 
-     [IDEE DE TYPE D'ANIMATION]
-     - grand puis petit (coutour)
-     - rotate un peu à gauche puis à droite, pas beaucoup mais vif avec petit pause genre "tac tac   .... tac tac ..... tac tac"
-     -->
-     <!-- A SUIVRE : 
-     - travailler le fond ? avec texture ? (hachure, pointillé, etc )
-     - vrai choix des projets 
-     -->
-
 </template>
 
 <script setup>
@@ -44,15 +34,7 @@
         animation: micro-orbite-reverse 15s linear infinite;
 
     }
-    @keyframes micro-orbite {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-    }
 
-    @keyframes micro-orbite-reverse {
-        from { transform: rotate(0deg); }
-        to { transform: rotate(-360deg); }
-    }
      .background-gribouilli {
         background-image: url(../../assets/images/gribouillis/gribouilli-borderDashed.png);
         background-size: contain;
@@ -63,7 +45,7 @@
         background-size: contain; 
         width: 215px;
         height: 213px;
-        position: absolute;
-        top: 144px;
+        /* position: absolute;
+        top: 144px; */
     }
 </style>

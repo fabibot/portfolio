@@ -1,6 +1,6 @@
 <template>
     <div class="projet-index container-fluid">
-        <div class="header-epingle p-4 d-flex align-items-center">
+        <div class="p-4 d-flex align-items-center">
         <RouterLink to="/cv" class="me-3">
             <button class="icon-btn logo retour medium" title="retour au cv"></button>
         </RouterLink>
@@ -49,10 +49,6 @@ function getImagePath (filename) {
     .projet-index {
         /* background-color: var(--color-3); */
         height: 100vh;
-    }
-
-    .header-epingle {
-        margin: 0 0 40px 0;
     }
 
     .grid-projet {
