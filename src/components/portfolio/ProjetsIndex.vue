@@ -1,6 +1,6 @@
 <template>
     <div class="projet-index container-fluid">
-        <div class="p-4 d-flex align-items-center">
+        <div class="p-4 pb-0 d-flex align-items-center">
         <RouterLink to="/cv" class="me-3">
             <button class="icon-btn logo retour medium" title="retour au cv"></button>
         </RouterLink>
@@ -17,17 +17,6 @@
             <BeauxArts :projetBeauxArts="[projetList[3], projetList[4], projetList[5]]"></BeauxArts>
         </div>
     </div>
-    <!-- <div class="grid-projet">
-        <div v-for="projet in projetList" class="p-4">
-            <div class="border-solid">
-                <img :src="getImagePath(projet.image)" alt="" class="rounded">
-            <p class="text-right cascadia-sb">
-                {{ projet.nom }}
-            </p>
-        </div>
-
-        </div>
-    </div> -->
     </div>
 </template>
 
@@ -59,13 +48,5 @@ function getImagePath (filename) {
         width: 100%;
     }
 
-    /* .border-solid {
-        border: solid 3px black;
-        padding: 10px;
-        transition: all 0.3s;
-    }
-    .border-solid:hover {
-        box-shadow: 0px 0px 0px 7px black;
-    } */
 
 </style>

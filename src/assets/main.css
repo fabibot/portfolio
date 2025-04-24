@@ -4,6 +4,11 @@
 @import '../../node_modules/bootstrap/dist/css/bootstrap.css';
 @import './animation.css';
 
+body {
+ background-color: var(--color-pale);
+ background-image: url(./images/gribouillis/grid-point-op20.png);
+ background-size: 1.2%;
+}
 
 .fond-jaune {
   background-color: var(--color-1);

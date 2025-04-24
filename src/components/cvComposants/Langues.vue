@@ -16,6 +16,6 @@ export default {
 
 <style>
     .fond-coupe {
-        background: linear-gradient(to right, var(--color-1) 0px 100px, white 100px 100%);
+        background: linear-gradient(to right, var(--color-1) 0px 100px, transparent 100px 100%);
     }
 </style>
