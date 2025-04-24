@@ -31,7 +31,7 @@ import info from './mainData';
     width: min-content;
     height: min-content;
     display: none;
-    background: linear-gradient(to right, var(--color-1) 0px 29px, white 10px 100%);
+    background: linear-gradient(to right, var(--color-1) 0px 29px, transparent 10px 100%);
   }
 
   .main-grid {
@@ -51,7 +51,7 @@ import info from './mainData';
       grid-row: 1/2;
       position: sticky;
       top: 0;
-      background-color: white;
+      background-color: var(--color-m-pale);
       z-index: 3;
       width: 100%;
     }
@@ -83,7 +83,7 @@ import info from './mainData';
     .column-btn {
       flex-direction: row !important;
       justify-content: end !important;
-      background-color: white;
+      background-color: var(--color-m-pale);
     }
     .div-prenom {
       display: none;

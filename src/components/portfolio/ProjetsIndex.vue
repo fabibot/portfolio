@@ -6,14 +6,14 @@
         </RouterLink>
         <h1>Explorez les projets</h1>
     </div>
-    <div class="d-flex flex-column align-items-center">
-        <div class="m-5 w-75">
+    <div class="projet-index-content d-flex flex-column align-items-center">
+        <div class="projet-groupe m-5 w-75">
             <ProjetEpingle :projetEpingle="projetList[1]"></ProjetEpingle>
         </div>
-        <div class="m-5 w-75">
+        <div class="projet-groupe m-5 w-75">
             <Deambulations :projetDeambulation="[projetList[0], projetList[2], projetList[1]]"></Deambulations>
         </div>
-        <div class="m-5 w-75">
+        <div class="projet-groupe m-5 w-75">
             <BeauxArts :projetBeauxArts="[projetList[3], projetList[4], projetList[5]]"></BeauxArts>
         </div>
     </div>
@@ -21,22 +21,40 @@
 </template>
 
 <script setup>
-import { RouterLink } from 'vue-router';
-import projetList from '@/assets/images/projets/projetData';
-import ProjetEpingle from './ProjetEpingle.vue';
-import Deambulations from './Deambulations.vue';
-import BeauxArts from './BeauxArts.vue';
+    import { RouterLink } from 'vue-router';
+    import projetList from '@/assets/images/projets/projetData';
+    import ProjetEpingle from './ProjetEpingle.vue';
+    import Deambulations from './Deambulations.vue';
+    import BeauxArts from './BeauxArts.vue';
+    import { onMounted } from 'vue'
 
-function getImagePath (filename) {
-  return new URL(`../../assets/images/projets/${filename}`, import.meta.url).href;
-}
 
+    function getImagePath (filename) {
+    return new URL(`../../assets/images/projets/${filename}`, import.meta.url).href;
+    }
+
+    onMounted(() => {
+        const indexDiv = document.getElementsByClassName("projet-groupe");
+        if(indexDiv) {
+            for(let i = 0; i < indexDiv.length; i++) {
+                let divImg = indexDiv[i].getElementsByClassName("img-projet");
+                let divCard = indexDiv[i].getElementsByClassName("card-projet")[0];
+                for(let j = 0; j < divImg.length; j++ ) {
+                    divImg[j].addEventListener( "mouseover", () => {
+                        divCard.style.boxShadow = "inset 420px 0 var(--color-1)"
+                    } );
+                    divImg[j].addEventListener( "mouseleave", () => {
+                        divCard.style.boxShadow = ""
+                    } );
+                }
+            }
+        } 
+    });
 
 </script>
 
 <style scoped>
     .projet-index {
-        /* background-color: var(--color-3); */
         height: 100vh;
     }
 
@@ -47,6 +65,5 @@ function getImagePath (filename) {
     .grid-projet img {
         width: 100%;
     }
-
 
 </style>
