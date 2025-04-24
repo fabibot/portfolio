@@ -23,6 +23,17 @@
 
     .card-projet:hover  {
         box-shadow: inset 420px 0 var(--color-1);
+    }
 
+    @media (max-width: 600px) {
+        .card-projet {
+            width: auto;
+        }
+    }
+
+    @media (max-width: 900px) {
+        .card-projet {
+            margin: 0 !important;
+        }
     }
 </style>

@@ -1,9 +1,9 @@
 <template>
-    <div class="d-flex justify-content-center">
+    <div class="d-deambulations d-flex justify-content-center">
         <CardProjet titre="Déambulations Numériques" description="Lorem Ipsu text explicati pour le rpojet de décembre 20123. Contenu sans contenu pour explicatif du projet."/>
-        <div class="d-flex align-items-top">
-             <div v-for="projet in projetDeambulation">
-                <div :class="[`img-${projet.titre}`]">
+        <div class="div-images d-flex align-items-top">
+             <div v-for="(projet, index) in projetDeambulation">
+                <div :class="[`img-${index}`]">
                     <img :src="getImagePath(projet.image)" alt="" class="img-projet m-2">
                 </div>
              </div>
@@ -24,44 +24,52 @@ function getImagePath (filename) {
 </script>
 
 <style scoped> 
-    .img-Abysse, .img-Bauhaus, .img-Time {
+    .img-0, .img-2, .img-1 {
         position: relative;
     }
 
-    .img-Abysse {
+    .img-0 {
         top: 60px;
         left: 10px;
         padding: 20px;
         background-image: url(../../assets/images/gribouillis/gribouilli-borderDashed-2.png);
         background-size: contain;
         animation: 3s mouvement-scale linear infinite;
-
     }
-   .img-Abysse img {
+   .img-0 img {
         width: 80px;
         animation: 3s static-scale linear infinite;
 
     }
 
-    .img-Time {
+    .img-1 {
         top: -20px;
         left: 20px
     }
 
-    .img-Time img {
+    .img-1 img {
         width: 100px;
     }
 
-    .img-Bauhaus {
+    .img-2 {
         top: 60px;
         padding: 35px;
         background-image: url(../../assets/images/gribouillis/gribouilli-eclat-1.png);
         background-size: contain;
         animation: 1s mouvement-eclat linear infinite;
     }
-    .img-Bauhaus img {
+    .img-2 img {
         width: 150px;
         animation: 1s static-eclat linear infinite;
+    }
+
+    @media (max-width: 900px) {
+        .d-deambulations {
+            flex-direction: column-reverse !important;
+        }
+        .div-images {
+            justify-content: flex-end;
+        }
     }
 
     

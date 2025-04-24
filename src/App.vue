@@ -7,7 +7,7 @@ import info from './mainData';
 <template>
   <div class="main-grid">
     <div class="column-nom position-fixed">
-      <div class="mini-nom m-4 mt-3 p-1">
+      <div class="mini-nom mx-4 my-2 mt-3 p-1">
               <div class="octarine-b">Fabiola</div>
               <div class="octarine-b">Bellon</div>
       </div>
@@ -17,7 +17,7 @@ import info from './mainData';
         </div>
       </div>
     </div>
-    <div class="column-btn  sticky-top d-flex flex-column justify-content-between">
+    <div class="column-btn sticky-top d-flex flex-column justify-content-between">
       <ReseauxButtons v-bind:info="info"></ReseauxButtons>
     </div>
     <div class="column-content">

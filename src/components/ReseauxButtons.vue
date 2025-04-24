@@ -1,5 +1,5 @@
 <template>
-    <div class="reseaux-btn sticky-top">
+    <div class="reseaux-btn sticky-top mx-2">
           <a :href="info.coordonnees.insta.lien" target="_blank">
           <div class="logo insta mb-4 my-4"></div>
           </a>

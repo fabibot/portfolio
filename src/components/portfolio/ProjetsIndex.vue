@@ -65,5 +65,20 @@
     .grid-projet img {
         width: 100%;
     }
+    
+    @media (max-width: 925px) {
+        h1 {
+            font-size: 3rem !important;
+        }
+    }
+
+    @media (max-width: 900px) {
+        .projet-groupe > div {
+            flex-direction: column;
+        }
+        .projet-groupe {
+            margin: 0 !important;
+        }
+    }
 
 </style>

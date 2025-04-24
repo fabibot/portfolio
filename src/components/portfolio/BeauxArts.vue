@@ -1,7 +1,7 @@
 <template>
     <div class="d-flex justify-content-center">
         <div>
-            <div class="d-flex align-items-center">
+            <div class="div-images d-flex align-items-center">
                 <div v-for="(projet, index) in projetBeauxArts">
                     <div :class="`img-${index}`">
                         <img :src="getImagePath(projet.image)" alt="" class="img-projet">
@@ -64,7 +64,12 @@ function getImagePath (filename) {
     .img-2 img {
         width: 100px;
         animation: micro-orbite-reverse 15s linear infinite;
+    }
 
+    @media (max-width: 900px) {
+        .div-images {
+            justify-content: flex-end;
+        }
     }
 
 </style>
