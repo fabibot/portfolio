@@ -8,7 +8,7 @@
     </div>
     <div class="projet-index-content d-flex flex-column align-items-center">
         <div class="projet-groupe m-5 w-75">
-            <ProjetEpingle :projetEpingle="projetList[1]"></ProjetEpingle>
+            <ProjetEpingle :projetEpingle="projetList[6]"></ProjetEpingle>
         </div>
         <div class="projet-groupe m-5 w-75">
             <Deambulations :projetDeambulation="[projetList[0], projetList[2], projetList[1]]"></Deambulations>

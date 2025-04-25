@@ -13,10 +13,9 @@
               <button :class="{'icon-btn': true, 'logo': true, 'my-4': true, 'fond-jaune': true, [getNextPageIcon()]: true}" :title="`explorer le ${getNextPageTitle()}`"></button>
           </RouterLink>
       </div>
-      <div class="download-btn">
+      <a class="download-btn" href="src/assets/CVFabiolaBellon.pdf" download>
           <button title="télécharger le cv" class="telecharger icon-btn"></button>
-      </div>
-
+      </a>
       <div>
   </div>
 </template>
