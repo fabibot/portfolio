@@ -1,11 +1,19 @@
 <template>
     <div class="projet-index container-fluid">
-        <div class="p-4 pb-0 d-flex align-items-center">
-        <RouterLink to="/" class="me-3">
-            <button class="icon-btn logo retour medium" title="retour au cv"></button>
-        </RouterLink>
-        <h1>Explorez les projets</h1>
-    </div>
+        <!-- <div class="p-4 pb-0 d-flex align-items-center">
+            <RouterLink to="/" class="me-3">
+                <button class="icon-btn logo retour medium" title="retour au cv"></button>
+            </RouterLink>
+            <h1>Explorez les projets</h1>
+        </div> -->
+        <div>
+            <h1>
+                <RouterLink to="/" class="">
+                    <span class="icon-btn logo retour medium"></span>
+                </RouterLink>
+                Explorez les projets
+            </h1>
+        </div>
     <div class="projet-index-content d-flex flex-column align-items-center">
         <div class="projet-groupe m-5 w-75">
             <ProjetEpingle :projetEpingle="projetList[6]"></ProjetEpingle>
@@ -65,6 +73,10 @@
     .grid-projet img {
         width: 100%;
     }
+
+    .projet-index h1 a {
+        display: inline-flex;
+    }
     
     @media (max-width: 925px) {
         h1 {
@@ -78,6 +90,12 @@
         }
         .projet-groupe {
             margin: 0 !important;
+        }
+    }
+
+    @media (max-width: 520px) {
+        .projet-groupe {
+            width: 95% !important;
         }
     }
 

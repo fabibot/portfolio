@@ -4,7 +4,9 @@
         <div class="div-images d-flex align-items-top">
              <div v-for="(projet, index) in projetDeambulation">
                 <div :class="[`img-${index}`]">
-                    <img :src="getImagePath(projet.image)" alt="" class="img-projet m-2">
+                    <a :href="projet.lien" target="_blank">
+                        <img :src="getImagePath(projet.image)" alt="" class="img-projet m-2">
+                    </a>
                 </div>
              </div>
         </div>
@@ -72,6 +74,20 @@ function getImagePath (filename) {
         }
     }
 
+    @media (max-width: 600px) {
+        .img-1, .img-0 {
+            left: 70px;
+        }
+        .img-0 img {
+            width: 50px;
+        }
+        .img-1 img {
+           width: 80px; 
+        }
+        .img-2 img {
+            width: 125px;
+        }
+    }
     
 
 </style>

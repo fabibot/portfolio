@@ -21,8 +21,10 @@
         box-shadow: inset 70px 0 var(--color-1);
     }
 
-    .card-projet:hover  {
-        box-shadow: inset 420px 0 var(--color-1);
+    @media (min-width: 520px) {
+        .card-projet:hover  {
+            box-shadow: inset 420px 0 var(--color-1);
+    }
     }
 
     @media (max-width: 600px) {
