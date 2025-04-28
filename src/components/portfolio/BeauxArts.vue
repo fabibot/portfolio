@@ -12,7 +12,11 @@
             </div>
         </div>
         <div class="d-flex">
-            <CardProjet titre="Beaux-Arts - option numérique" description="Lorem Ipsu text explicati pour le rpojet de décembre 20123. Contenu sans contenu pour explicatif du projet."/>
+            <CardProjet 
+                titre="Beaux-Arts - option numérique" 
+                date="Octobre 2022" 
+                description="Au travers de ces deux projets, on aborde le langage : celui de l'humain et celui de la machine. Une frontière qui rend la nature profonde de l’ordinateur inaccessible à la plupart des êtres humains."
+            />
         </div>
     </div>
 </template>

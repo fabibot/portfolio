@@ -1,21 +1,23 @@
 <template>
     <div class="card-projet p-4">
         <h2 class="octarine-b">{{ titre }}</h2>
-        <p class="cascadia-el">{{ description }}</p>
+        <p class="cascadia-el"> {{ description }}</p>
+        <p class="cascadia-el">{{ date }}</p>
     </div>
 </template>
 
 <script setup>
     const props = defineProps({
     titre: String,
-    description: String
+    description: String,
+    date: String
     })
 </script>
 
 
 <style scoped>
     .card-projet {
-        width: 420px;
+        width: 460px;
         height: min-content;
         transition: box-shadow 0.7s ease-in-out;
         box-shadow: inset 70px 0 var(--color-1);
@@ -23,7 +25,7 @@
 
     @media (min-width: 520px) {
         .card-projet:hover  {
-            box-shadow: inset 420px 0 var(--color-1);
+            box-shadow: inset 460px 0 var(--color-1);
     }
     }
 

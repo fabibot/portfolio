@@ -16,7 +16,7 @@
         </div>
     <div class="projet-index-content d-flex flex-column align-items-center">
         <div class="projet-groupe m-5 w-75">
-            <ProjetEpingle :projetEpingle="projetList[6]"></ProjetEpingle>
+            <ProjetEpingle :projetEpingle="projetList[0]"></ProjetEpingle>
         </div>
         <div class="projet-groupe m-5 w-75">
             <Deambulations :projetDeambulation="[projetList[0], projetList[2], projetList[1]]"></Deambulations>
@@ -49,7 +49,7 @@
                 let divCard = indexDiv[i].getElementsByClassName("card-projet")[0];
                 for(let j = 0; j < divImg.length; j++ ) {
                     divImg[j].addEventListener( "mouseover", () => {
-                        divCard.style.boxShadow = "inset 420px 0 var(--color-1)"
+                        divCard.style.boxShadow = "inset 460px 0 var(--color-1)"
                     } );
                     divImg[j].addEventListener( "mouseleave", () => {
                         divCard.style.boxShadow = ""

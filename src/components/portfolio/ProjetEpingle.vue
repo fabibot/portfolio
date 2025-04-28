@@ -1,5 +1,5 @@
 <template>
-    <div class="d-flex d-flex justify-content-center align-items-end">
+    <div class="d-flex justify-content-center  align-items-center">
         <div class="d-flex  div-images">
             <div class="p-5 image-projet-epingle background-gribouilli">
                 <a :href="projetEpingle.lien" target="_blank">
@@ -10,7 +10,7 @@
         </div>
         <div class="d-block">
             <div class="mon-pref"></div>
-            <CardProjet :titre="projetEpingle.titre" :description="projetEpingle.description" class="ms-5"></CardProjet>
+            <CardProjet :titre="projetEpingle.titre" :date="projetEpingle.date" :description="projetEpingle.description" class="ms-5"></CardProjet>
         </div>
     </div>
 </template>
@@ -46,10 +46,10 @@
      }
 
     .mon-pref, .mon-pref-bis {
-        background-image: url(../../assets/images/gribouillis/gribouilli-MonPref.png);
+        background-image: url(../../assets/images/gribouillis/gribouilli-nePasManquer.png);
         background-size: contain; 
-        width: 215px;
-        height: 213px;
+        width: 220px;
+        height: 220px;
     }
 
     .mon-pref-bis {
