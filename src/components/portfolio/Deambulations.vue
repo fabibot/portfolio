@@ -4,7 +4,9 @@
         <div class="div-images d-flex align-items-top">
              <div v-for="(projet, index) in projetDeambulation">
                 <div :class="[`img-${index}`]">
-                    <img :src="getImagePath(projet.image)" alt="" class="img-projet m-2">
+                    <a :href="projet.lien" target="_blank">
+                        <img :src="getImagePath(projet.image)" alt="" class="img-projet m-2">
+                    </a>
                 </div>
              </div>
         </div>

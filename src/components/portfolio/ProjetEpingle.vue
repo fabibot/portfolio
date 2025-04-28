@@ -2,7 +2,9 @@
     <div class="d-flex d-flex justify-content-center align-items-end">
         <div class="d-flex  div-images">
             <div class="p-5 image-projet-epingle background-gribouilli">
-                <img :src="getImagePath(projetEpingle.image)" alt="" class="img-projet static-content">
+                <a :href="projetEpingle.lien" target="_blank">
+                    <img :src="getImagePath(projetEpingle.image)" alt="" class="img-projet static-content">
+                </a>
             </div>
             <div class="mon-pref-bis"></div>
         </div>
