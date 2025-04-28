@@ -97,4 +97,8 @@ button.telecharger {
   max-width: 230px;
 }
 
-
+@media (max-width : 600px) {
+  .img-projet {
+    max-width: 150px;
+  }
+}

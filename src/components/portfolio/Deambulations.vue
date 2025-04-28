@@ -74,6 +74,20 @@ function getImagePath (filename) {
         }
     }
 
+    @media (max-width: 600px) {
+        .img-1, .img-0 {
+            left: 70px;
+        }
+        .img-0 img {
+            width: 50px;
+        }
+        .img-1 img {
+           width: 80px; 
+        }
+        .img-2 img {
+            width: 125px;
+        }
+    }
     
 
 </style>
