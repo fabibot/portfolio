@@ -4,7 +4,7 @@ import ProjetsIndex from '../components/portfolio/ProjetsIndex.vue';
 
 const routes = [
   {
-    path: '/cv',
+    path: '/',
     name: 'Cv',
     component: Cv
   },

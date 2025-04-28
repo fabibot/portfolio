@@ -1,7 +1,7 @@
 <template>
     <div class="projet-index container-fluid">
         <div class="p-4 pb-0 d-flex align-items-center">
-        <RouterLink to="/cv" class="me-3">
+        <RouterLink to="/" class="me-3">
             <button class="icon-btn logo retour medium" title="retour au cv"></button>
         </RouterLink>
         <h1>Explorez les projets</h1>
