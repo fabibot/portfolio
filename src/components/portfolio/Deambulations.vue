@@ -1,6 +1,10 @@
 <template>
     <div class="d-deambulations d-flex justify-content-center">
-        <CardProjet titre="Déambulations Numériques" description="Lorem Ipsu text explicati pour le rpojet de décembre 20123. Contenu sans contenu pour explicatif du projet."/>
+        <CardProjet 
+            titre="Déambulations Numériques"
+            date="Décembre 2023" 
+            description="Plongez dans un minuscule océan, faites vriller le temps ou improvisez-vous artiste du Bauhaus... Ce projet regroupe trois petites expériences qui invitent à déambuler sans but précis."
+        />
         <div class="div-images d-flex align-items-top">
              <div v-for="(projet, index) in projetDeambulation">
                 <div :class="[`img-${index}`]">
