@@ -78,16 +78,16 @@
     .div-prenom {
         width: 30px;
         height: 530px;
-        padding: 10px;
+        padding: 35px 2px;
+        display: flex;
+        align-items: flex-end;
     }
     
     .rotate-prenom {
-        transform: rotate(90deg);
+        transform: rotate(-90deg);
     }
     .div-prenom  h1 {
         position: absolute;
-        top: -51px;
-        left: 20px;
         text-wrap: nowrap;
 
     }
