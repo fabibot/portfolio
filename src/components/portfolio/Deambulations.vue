@@ -1,5 +1,5 @@
 <template>
-    <div class="d-deambulations d-flex justify-content-center">
+    <div class="reverse-900 d-flex justify-content-center">
         <CardProjet 
             titre="Déambulations Numériques"
             date="Décembre 2023" 
@@ -67,15 +67,6 @@ function getImagePath (filename) {
     .img-2 img {
         width: 150px;
         animation: 1s static-eclat linear infinite;
-    }
-
-    @media (max-width: 900px) {
-        .d-deambulations {
-            flex-direction: column-reverse !important;
-        }
-        .div-images {
-            justify-content: flex-end;
-        }
     }
 
     @media (max-width: 600px) {

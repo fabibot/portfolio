@@ -67,9 +67,6 @@
         .mon-pref-bis {
             display: block;
         }
-        .div-images {
-            justify-content: flex-end;
-        }
         .image-projet-epingle {
             position: inherit;
         }

@@ -71,12 +71,6 @@ function getImagePath (filename) {
         animation: micro-orbite-reverse 15s linear infinite;
     }
 
-    @media (max-width: 900px) {
-        .div-images {
-            justify-content: flex-end;
-        }
-    }
-
     @media (max-width: 600px) {
         .img-1, .img-0 {
             left: 50px;
