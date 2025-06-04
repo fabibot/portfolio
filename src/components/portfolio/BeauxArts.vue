@@ -1,5 +1,5 @@
 <template>
-    <div class="d-flex justify-content-center">
+    <div class="reverse-900 d-flex justify-content-center">
         <div class="d-flex">
             <CardProjet 
                 titre="Beaux-Arts - option numérique" 
@@ -7,14 +7,12 @@
                 description="Au travers de ces deux projets, on aborde le langage : celui de l'humain et celui de la machine. Une frontière qui rend la nature profonde de l’ordinateur inaccessible à la plupart des êtres humains."
             />
         </div>
-        <div>
-            <div class="div-images d-flex align-items-center">
-                <div v-for="(projet, index) in projetBeauxArts">
-                    <div :class="`img-${index}`">
-                        <a :href="projet.lien" target="_blank">
-                            <img :src="getImagePath(projet.image)" alt="" class="img-projet">
-                        </a>
-                    </div>
+        <div class="div-images d-flex align-items-center">
+            <div v-for="(projet, index) in projetBeauxArts">
+                <div :class="`img-${index}`">
+                    <a :href="projet.lien" target="_blank">
+                        <img :src="getImagePath(projet.image)" alt="" class="img-projet">
+                    </a>
                 </div>
             </div>
         </div>
@@ -59,13 +57,6 @@ function getImagePath (filename) {
         width: 70px;
     }
 
-
-    @media (max-width: 900px) {
-        .div-images {
-            justify-content: flex-end;
-        }
-    }
-
     @media (max-width: 600px) {
         .img-1, .img-0 {
             left: 50px;
@@ -75,5 +66,15 @@ function getImagePath (filename) {
         }
     }
     
+    @media (max-width: 900px) {
+        .img-0 {
+            top: 0;
+            left: -30px;
+        }
+        .img-1 {
+            left: 0;
+            top: -50px;
+        }
+    }
 
 </style>

@@ -103,3 +103,12 @@ button.telecharger {
     max-width: 150px;
   }
 }
+
+@media (max-width: 900px) {
+  .div-images {
+      justify-content: flex-end;
+  }
+   .reverse-900 {
+      flex-direction: column-reverse !important;
+    }
+}
