@@ -5,7 +5,7 @@
                 <div>{{ coordonnees.dateNaissance }}</div>
                 <div>{{ coordonnees.mail }}</div>
                 <div>{{ coordonnees.codePostal }}</div>
-                <div class="octarine-b">Tel. {{ coordonnees.numero }}</div>
+                <div>Tel. {{ coordonnees.numero }}</div>
             </div>
         </div>
     </div>

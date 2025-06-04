@@ -4,6 +4,7 @@
 @import '../../node_modules/bootstrap/dist/css/bootstrap.css';
 @import './animation.css';
 
+/*General*/
 body {
  background-color: var(--color-pale);
  background-image: url(./images/gribouillis/grid-point-op20.png);

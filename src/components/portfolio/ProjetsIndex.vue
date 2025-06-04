@@ -21,8 +21,11 @@
         <div class="projet-groupe m-5 w-75">
             <Deambulations :projetDeambulation="[projetList[0], projetList[2], projetList[1]]"></Deambulations>
         </div>
+            <div class="projet-groupe m-5 w-75">
+                <ProjetClassique :projetClassique="[projetList[8], projetList[5], projetList[4]]"></ProjetClassique>
+            </div>
         <div class="projet-groupe m-5 w-75">
-            <BeauxArts :projetBeauxArts="[projetList[3], projetList[4], projetList[5]]"></BeauxArts>
+            <BeauxArts :projetBeauxArts="[projetList[7], projetList[3]]"></BeauxArts>
         </div>
     </div>
     </div>
@@ -35,6 +38,7 @@
     import Deambulations from './Deambulations.vue';
     import BeauxArts from './BeauxArts.vue';
     import { onMounted } from 'vue'
+    import ProjetClassique from './ProjetClassique.vue';
 
 
     function getImagePath (filename) {
