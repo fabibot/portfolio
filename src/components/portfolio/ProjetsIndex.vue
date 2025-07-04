@@ -18,13 +18,13 @@
         <div class="projet-groupe m-5 w-75">
             <ProjetEpingle :projetEpingle="projetList[7]"></ProjetEpingle>
         </div>
-        <div class="projet-groupe m-5 w-75">
+        <div class="projet-groupe m-4 w-75">
             <Deambulations :projetDeambulation="[projetList[0], projetList[2], projetList[1]]"></Deambulations>
         </div>
-            <div class="projet-groupe m-5 w-75">
+            <div class="projet-groupe m-4 w-75">
                 <ProjetClassique :projetClassique="[projetList[8], projetList[5], projetList[4]]"></ProjetClassique>
             </div>
-        <div class="projet-groupe m-5 w-75">
+        <div class="projet-groupe m-4 w-75">
             <BeauxArts :projetBeauxArts="[projetList[7], projetList[3]]"></BeauxArts>
         </div>
     </div>
@@ -39,7 +39,6 @@
     import BeauxArts from './BeauxArts.vue';
     import { onMounted } from 'vue'
     import ProjetClassique from './ProjetClassique.vue';
-
 
     function getImagePath (filename) {
     return new URL(`../../assets/images/projets/${filename}`, import.meta.url).href;
