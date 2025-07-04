@@ -8,7 +8,7 @@
             </div>
             <div class="mon-pref-bis"></div>
         </div>
-        <div class="d-block">
+        <div class="d-flex">
             <div class="mon-pref"></div>
             <CardProjet :titre="projetEpingle.titre" :date="projetEpingle.date" :description="projetEpingle.description" class="ms-5"></CardProjet>
         </div>
@@ -30,7 +30,6 @@
 <style scoped>
     .image-projet-epingle {
         position: relative;
-        bottom: 50px;
         animation: micro-orbite 15s linear infinite;
         display: inline-block;
 
@@ -57,7 +56,7 @@
         background-repeat: no-repeat;
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: 1050px) {
         .projet-groupe > div {
             display: block !important;
         }
