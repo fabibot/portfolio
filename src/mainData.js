@@ -30,10 +30,10 @@ const info = {
     competance : [
       { nom: "Vue.js", niveau: 3 },
       { nom: "Bootstrap", niveau: 5 },
-      { nom: "Symfony", niveau: 3 },
+      { nom: "Flutter", niveau: 4 },
       { nom: "Git", niveau: 4 },
       { nom: "HTML, CSS, JavaScript", niveau: 4 },
-      { nom: "+ Initiations à Flutter", niveau: 0 }
+      { nom: "+ Initiations à Figma", niveau: 0 }
   ],
   experience : [
       {duree : "Octobre 2024 à Mars 2025, Illiwap, Saint-Etienne", description: "Participation au développement et à la maintenance d’un projet sous Symfony, gestion des tickets clients et correction de bugs. Ce projet à l'écosystème complet (backoffice, site web public, CRM et application mobile) m’a permis  de mieux comprendre les enjeux d’un projet à grande échelle."},

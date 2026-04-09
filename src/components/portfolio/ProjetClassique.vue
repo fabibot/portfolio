@@ -15,7 +15,7 @@
             <CardProjet 
                 titre="Projets classiques" 
                 date="Janvier - Avril 2024" 
-                description="Appels d'API, interfaces dynamiques, jeux vidéo : par ici, on est sérieux et on essaie de servir (un peu) à quelque chose."
+                description="Appels d'API, interfaces dynamiques, jeux vidéo : par ici, on est sérieux et on essaie de servir (vaguement) à quelque chose."
             />
         </div>
     </div>
