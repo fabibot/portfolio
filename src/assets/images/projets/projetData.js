@@ -9,7 +9,7 @@ const projetList = [
     { titre : "Bauhaus", date: "Décembre 2023", image: "bauhaus2.png", lien: "https://fabibot.github.io/DeambulationNumerique/page2.html", description : "Lorem Ipsu text explicati pour le rpojet de décembre 20123. Contenu sans contenu pour explicatif du projet."},
     { titre : "Musique et robot", date: "Juin 2022", image: "dnaNumerique2.png", lien: "https://musique-et-robots.netlify.app/", description : "Projet autour de trois films qui abordent la question de l'humanité et de l’intelligence artificielle, chacun adoptant un parti pris très différent. Ce projet a été réalisé dans le cadre de la Licence à l’École Supérieure d’Art et de Design de Saint-Étienne."},
     { titre : "TodoTodo", date: "Avril 2024 2022", image: "todotodo.png", lien: "https://todotodo-fab.netlify.app/", description : "Todo list des plus classique"},
-
+    { titre : "Yaketi - Projet Flutter", date : "Février 2026", image : "carteYaketi.png", lien : "https://yaketi.netlify.app/", description: "Cette application est disponible sur Google Play. Du rock au jazz, en passant par la country ou la soul, partez à la découverte de l’histoire de la musique avec Yakéti ! "}
 
 
 
