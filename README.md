@@ -28,9 +28,10 @@ npm run dev
 npm run build
 ```
 
-### Credit logos : 
+### Credit icons : 
 -  Pixel perfect
 -  edt.im
 -  Mike Zuidgeest
 - jojooid
 -  Arafat Uddin
+- Magnific 
