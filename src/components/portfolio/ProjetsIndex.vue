@@ -8,9 +8,9 @@
         </div> -->
         <div>
             <h1>
-                <RouterLink to="/" class="">
+                <a @click="goRouterBack" class="">
                     <span class="icon-btn logo retour medium"></span>
-                </RouterLink>
+                </a>
                 Explorez les projets
             </h1>
         </div>
@@ -39,10 +39,17 @@
     import BeauxArts from './BeauxArts.vue';
     import { onMounted } from 'vue'
     import ProjetClassique from './ProjetClassique.vue';
+    import router from '@/router/index.js';
 
     function getImagePath (filename) {
     return new URL(`../../assets/images/projets/${filename}`, import.meta.url).href;
     }
+
+    function goRouterBack() {
+	if (router) {
+		router.back();
+	}
+	}
 
     onMounted(() => {
         const indexDiv = document.getElementsByClassName("projet-groupe");
