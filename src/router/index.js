@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Cv from '../components/MainContent.vue';
 import ProjetsIndex from '../components/portfolio/ProjetsIndex.vue';
+import CompetencesIndex from '@/components/portfolio/CompetencesIndex.vue';
 
 const routes = [
   {
@@ -12,6 +13,11 @@ const routes = [
     path: '/projets',
     name: 'Projets',
     component: ProjetsIndex
+  },
+  {
+    path: '/competences',
+    name: 'ComptencesIndex',
+    component: CompetencesIndex
   }
 ];
 
