@@ -5,8 +5,8 @@
                 <div class="div-image-image"></div>
             </div>
             <div class="div-nom ps-3">
-                <h1 class="color-bleu octarine-b">Developpeuse Front-end</h1>
-                <h3 class="color-bleu octarine-b ">avec formation initiale en design</h3>
+                <h1 class="color-bleu octarine-b">Webmaster</h1>
+                <h3 class="color-bleu octarine-b "> developpeuse front end avec formation initiale en design</h3>
             </div>
             <InfoPersonnelles v-bind:coordonnees="info.coordonnees" class="d-flex align-items-end ps-3 div-info"></InfoPersonnelles>
 
