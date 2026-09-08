@@ -41,22 +41,22 @@ import { goRouterBack } from '../tools/basic-tools';
     .caseCompetence {
         margin: 15px;
         padding: 15px;
-        min-height: 300px;
+        min-height: 350px;
         min-width: 275px;
         background-repeat: no-repeat;
-        transition: box-shadow 0.8s ease-in-out;
+        transition: all 0.25s ease-in-out;
         background-size: cover;
         background-position: center;
-        box-shadow: inset -1000px 0px 0px 0px rgba(0, 0, 0, 0.70);
+        box-shadow: inset -1000px 0px 0px 0px rgba(0, 0, 0, 0.30);
     }
 
     a {
         color: #f7f4f4;
         text-decoration: unset;
     }
-    
+
     .caseCompetence:hover {
-        box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.70);
+        transform: scale(1.05);
     }
 
     .img-numerique {
