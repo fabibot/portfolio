@@ -14,15 +14,14 @@
           </p>
         </div>
 
-    <div class="mt-5">
-       <div class="gallery">
-    <div v-for="(image, index) in gallery" :key="index" class="gallery-item">
-        <img :src="getImagePath(image.src)" alt="illustration de projet">
-    </div>
-</div>
-    </div>
-    </div>
-    <img src="../../assets/images/competence/imageNumerique/" alt="">
+      <div class="mt-5">
+        <div class="gallery">
+            <div v-for="(image, index) in gallery" :key="index" class="gallery-item">
+                <img :src="getImagePath(image.src)" alt="illustration de projet">
+            </div>
+        </div>
+      </div>
+  </div>
 </template>
 
 <script setup>
