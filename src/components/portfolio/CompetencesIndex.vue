@@ -22,7 +22,7 @@ import { goRouterBack } from '../tools/basic-tools';
                     <h2 class="octarine-b">Laboratoire Web</h2>
                     <p class="cascadia-el">HTML, CSS, JavaScript et Flutter </p>
                 </RouterLink>
-                <RouterLink to="/" class="col caseCompetence d-flex flex-column justify-content-end img-numerique">
+                <RouterLink to="/image-numerique" class="col caseCompetence d-flex flex-column justify-content-end img-numerique">
                     <h2 class="octarine-b">Image Numérique</h2>
                     <p class="cascadia-el">Figma, Photoshop et illustrations</p>
                 </RouterLink>

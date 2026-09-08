@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import Cv from '../components/MainContent.vue';
 import ProjetsIndex from '../components/portfolio/ProjetsIndex.vue';
 import CompetencesIndex from '@/components/portfolio/CompetencesIndex.vue';
+import ImageNumerique from '@/components/portfolio/ImageNumerique.vue';
 
 const routes = [
   {
@@ -18,6 +19,11 @@ const routes = [
     path: '/competences',
     name: 'ComptencesIndex',
     component: CompetencesIndex
+  },
+  {
+    path: '/image-numerique',
+    name: 'ImageNumerique',
+    component: ImageNumerique
   }
 ];
 

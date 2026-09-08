@@ -1,16 +1,10 @@
 <template>
     <div class="projet-index container-fluid">
-        <!-- <div class="p-4 pb-0 d-flex align-items-center">
-            <RouterLink to="/" class="me-3">
-                <button class="icon-btn logo retour medium" title="retour au cv"></button>
-            </RouterLink>
-            <h1>Explorez les projets</h1>
-        </div> -->
-        <div>
-            <h1>
-                <a @click="goRouterBack" class="">
+        <div class="d-flex align-items-center">
+            <a @click="goRouterBack" class="d-flex me-3">
                     <span class="icon-btn logo retour medium"></span>
-                </a>
+            </a>
+            <h1>
                 Explorez les projets
             </h1>
         </div>
@@ -39,17 +33,11 @@
     import BeauxArts from './BeauxArts.vue';
     import { onMounted } from 'vue'
     import ProjetClassique from './ProjetClassique.vue';
-    import router from '@/router/index.js';
+    import { goRouterBack } from '../tools/basic-tools.js';
 
     function getImagePath (filename) {
     return new URL(`../../assets/images/projets/${filename}`, import.meta.url).href;
     }
-
-    function goRouterBack() {
-	if (router) {
-		router.back();
-	}
-	}
 
     onMounted(() => {
         const indexDiv = document.getElementsByClassName("projet-groupe");
