@@ -1,10 +1,15 @@
+<script setup lang="ts">
+import { goRouterBack } from '../tools/basic-tools';
+
+</script>
+
 <template>
     <div class="container-fluid">
         <div>
             <h1>
-                <RouterLink to="/" class="">
+                <a @click="goRouterBack" class="">
                     <span class="icon-btn logo retour medium"></span>
-                </RouterLink>
+                </a>
                 Explorez les compétences
             </h1>
         </div>
