@@ -34,4 +34,5 @@ npm run build
 -  Mike Zuidgeest
 - jojooid
 -  Arafat Uddin
-- Magnific 
+- Magnific
+- th Studio 

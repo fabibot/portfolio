@@ -26,7 +26,7 @@ import { goRouterBack } from '../tools/basic-tools';
                     <h2 class="octarine-b">Image Numérique</h2>
                     <p class="cascadia-el">Figma, Photoshop et illustrations</p>
                 </RouterLink>
-                <RouterLink to="/" class="col caseCompetence d-flex flex-column justify-content-end prise-vue">
+                <RouterLink to="/photos-videos" class="col caseCompetence d-flex flex-column justify-content-end prise-vue">
                     <h2 class="octarine-b">Prise de vue réelle</h2>
                     <p class="cascadia-el">Photographies et vidéos</p>
                 </RouterLink>

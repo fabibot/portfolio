@@ -3,6 +3,7 @@ import Cv from '../components/MainContent.vue';
 import ProjetsIndex from '../components/portfolio/ProjetsIndex.vue';
 import CompetencesIndex from '@/components/portfolio/CompetencesIndex.vue';
 import ImageNumerique from '@/components/portfolio/ImageNumerique.vue';
+import PhotosVideos from '@/components/portfolio/PhotosVideos.vue';
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path: '/image-numerique',
     name: 'ImageNumerique',
     component: ImageNumerique
+  },
+  {
+    path: '/photos-videos',
+    name: 'PhotosVideos',
+    component: PhotosVideos
   }
 ];
 

@@ -75,6 +75,9 @@ h2 {
 .logo.home {
   background-image: url(./logos/home.png);
 }
+.logo.left-chevron {
+  background-image: url(./logos/left-chevron.png);
+}
 
 .logo.cv {
   background-image: url(./logos/cv-et-cv.png);
