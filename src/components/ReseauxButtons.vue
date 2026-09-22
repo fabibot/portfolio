@@ -32,9 +32,9 @@
     const route = useRoute()
 
     function getNextPage() {
-    return route.name === 'Projets'
+    return route.name === 'ComptencesIndex'
         ? { name: 'Cv' }
-        : { name: 'Projets' }
+        : { name: 'ComptencesIndex' }
     }
 
     function getNextPageIcon() {

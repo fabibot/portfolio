@@ -31,7 +31,7 @@
                 </div>
                 <div class="div-projet mt-5">
                     <h2 class="octarine-b">Portfolio</h2>
-                    <RouterLink to="/projets">
+                    <RouterLink to="/competences">
                         <div class="d-flex align-items-center">
                             <div class="icon-btn logo navette fond-jaune"></div>
                             <p class="m-0 ms-2"> Découvrir le portfolio </p>
