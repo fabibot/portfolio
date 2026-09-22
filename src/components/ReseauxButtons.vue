@@ -1,5 +1,8 @@
 <template>
     <div class="reseaux-btn sticky-top mx-2">
+          <RouterLink to="/competences">
+            <div class="logo home mb-4 my-4"></div>
+          </RouterLink>
           <a :href="info.coordonnees.insta.lien" target="_blank">
           <div class="logo insta mb-4 my-4"></div>
           </a>
@@ -29,9 +32,9 @@
     const route = useRoute()
 
     function getNextPage() {
-    return route.name === 'Projets'
+    return route.name === 'ComptencesIndex'
         ? { name: 'Cv' }
-        : { name: 'Projets' }
+        : { name: 'ComptencesIndex' }
     }
 
     function getNextPageIcon() {

@@ -72,6 +72,12 @@ h2 {
   background-image: url(./logos/bouton-retour.png);
   background-color: transparent;
 }
+.logo.home {
+  background-image: url(./logos/home.png);
+}
+.logo.left-chevron {
+  background-image: url(./logos/left-chevron.png);
+}
 
 .logo.cv {
   background-image: url(./logos/cv-et-cv.png);

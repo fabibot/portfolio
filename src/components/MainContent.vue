@@ -5,8 +5,8 @@
                 <div class="div-image-image"></div>
             </div>
             <div class="div-nom ps-3">
-                <h1 class="color-bleu octarine-b">Developpeuse Front-end</h1>
-                <h3 class="color-bleu octarine-b ">avec formation initiale en design</h3>
+                <h1 class="color-bleu octarine-b">Webmaster</h1>
+                <h3 class="color-bleu octarine-b "> developpeuse front end avec formation initiale en design</h3>
             </div>
             <InfoPersonnelles v-bind:coordonnees="info.coordonnees" class="d-flex align-items-end ps-3 div-info"></InfoPersonnelles>
 
@@ -31,7 +31,7 @@
                 </div>
                 <div class="div-projet mt-5">
                     <h2 class="octarine-b">Portfolio</h2>
-                    <RouterLink to="/projets">
+                    <RouterLink to="/competences">
                         <div class="d-flex align-items-center">
                             <div class="icon-btn logo navette fond-jaune"></div>
                             <p class="m-0 ms-2"> Découvrir le portfolio </p>
