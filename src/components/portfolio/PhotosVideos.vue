@@ -11,10 +11,23 @@
         <!-- <div class="mx-5">
           <p class="cascadia-el">ecrire le texte // vidéo à côté et photo en dessous</p>
         </div> -->
+        <div class="mt-5 d-lg-flex justify-content-end" style="max-height: 500px; overflow: hidden;">
+          <div class="me-4">
+            <img class="main-img" style="object-fit: contain;" :src="getImagePath('P1140074-retouche.jpg')" alt="illustration principale">  
+          </div>
+          <div class="col-lg-6">
+            <video width="100%" autoplay controls muted>
+                <source :src="getVideoPath()" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+          </div>
+
+        </div>
+         
 
     <div class="mt-5 row container align-items-end">
       <div class="col-lg-4">
-        <img class="main-img" :src="getImagePath('P1140074-retouche.jpg')" alt="illustration principale">  
+        <img class="main-img" :src="getImagePath('P1130988-retouche.jpg')" alt="illustration principale">  
       </div>
       <div class="col-lg-8">
         <h3 class="octarine-b">Nature morte et bijoux</h3>
@@ -31,9 +44,6 @@
 
     
     <div class="mt-5 row container align-items-end">
-      <div class="col-lg-4">
-        <img class="main-img" :src="getImagePath('diplome2.jpg')" alt="illustration principale">  
-      </div>
       <div class="col-lg-8">
         <h3 class="octarine-b">Homo Bulla</h3>
         <div class="gallery-scroll scroller" @wheel="scrollHorizontal">
@@ -44,6 +54,9 @@
               :alt="image.alt || ''"
           />
         </div>
+      </div>
+      <div class="col-lg-4">
+        <img class="main-img" :src="getImagePath('diplome2.jpg')" alt="illustration principale">  
       </div>
     </div>
       <div style="height: 60px;"></div>
@@ -81,11 +94,15 @@ const gallery1 = [
 const gallery2 = [
     { src: "P1140053-retouche3.jpg"},
     { src: "P1130910-retouche7.jpg"},
-    { src: "P1130988-retouche.jpg"},
+    { src: "P1140005.JPG"},
     { src: "P1140056-retouche.jpg"},
     { src: "P1140070.jpg"},
     { src: "P1140104-retouche4.jpg"}, 
 ]
+
+function getVideoPath () {
+     return new URL(`../../assets/images/competence/photos-videos/portfolio2026-mix.mp4`, import.meta.url).href;
+    }
 
 </script>
 
@@ -99,7 +116,7 @@ const gallery2 = [
 }
 
 .main-img {
-   width: 100%;
+  width: 100%;
   max-height: 500px;
   object-fit: cover;
   flex-shrink: 0;
