@@ -13,10 +13,10 @@
         </div> -->
 
     <div class="mt-5 row container align-items-end">
-      <div class="col-4">
+      <div class="col-lg-4">
         <img class="main-img" :src="getImagePath('P1140074-retouche.jpg')" alt="illustration principale">  
       </div>
-      <div class="col-8">
+      <div class="col-lg-8">
         <h3 class="octarine-b">Nature morte et bijoux</h3>
         <div class="gallery-scroll scroller" @wheel="scrollHorizontal">
           <img
@@ -31,10 +31,10 @@
 
     
     <div class="mt-5 row container align-items-end">
-      <div class="col-4">
+      <div class="col-lg-4">
         <img class="main-img" :src="getImagePath('diplome2.jpg')" alt="illustration principale">  
       </div>
-      <div class="col-8">
+      <div class="col-lg-8">
         <h3 class="octarine-b">Homo Bulla</h3>
         <div class="gallery-scroll scroller" @wheel="scrollHorizontal">
           <img
