@@ -32,7 +32,7 @@
     
     <div class="mt-5 row container align-items-end">
       <div class="col-4">
-        <img class="main-img" :src="getImagePath('diplome2.JPG')" alt="illustration principale">  
+        <img class="main-img" :src="getImagePath('diplome2.jpg')" alt="illustration principale">  
       </div>
       <div class="col-8">
         <h3 class="octarine-b">Homo Bulla</h3>
@@ -68,14 +68,14 @@ const scrollHorizontal = (event) => {
 }
 
 const gallery1 = [
-    { src: "bulle2.JPG"}, 
-    { src: "diplome3.JPG"},
-    { src: "diplome4.JPG"},
-    { src: "bulle3.JPG"},
-    { src: "diplome1.JPG"},
-    { src: "bulle4.JPG"},
-    { src: "bulle5.JPG"},
-    { src: "bulle1.JPG"},
+    { src: "bulle2.jpg"}, 
+    { src: "diplome3.jpg"},
+    { src: "diplome4.jpg"},
+    { src: "bulle3.jpg"},
+    { src: "diplome1.jpg"},
+    { src: "bulle4.jpg"},
+    { src: "bulle5.jpg"},
+    { src: "bulle1.jpg"},
 ]
 
 const gallery2 = [
@@ -83,7 +83,7 @@ const gallery2 = [
     { src: "P1130910-retouche7.jpg"},
     { src: "P1130988-retouche.jpg"},
     { src: "P1140056-retouche.jpg"},
-    { src: "P1140070.JPG"},
+    { src: "P1140070.jpg"},
     { src: "P1140104-retouche4.jpg"}, 
 ]
 
