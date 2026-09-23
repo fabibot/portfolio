@@ -28,15 +28,25 @@ const info = {
       { langue: 'Anglais', niveau : "Professionel"}
     ],
     competance : [
-      { nom: "Vue.js", niveau: 3 },
-      { nom: "Bootstrap", niveau: 5 },
-      { nom: "Flutter", niveau: 4 },
-      { nom: "Git", niveau: 4 },
+      // { nom: "Vue.js", niveau: 3 },
+      // { nom: "Bootstrap", niveau: 5 },
+      // { nom: "Flutter", niveau: 4 },
+      // { nom: "Git", niveau: 4 },
+      // { nom: "HTML, CSS, JavaScript", niveau: 5 },
+      // { nom: "figma", niveau: 3 },
+      // { nom: "Photoshop", niveau : 4 },
+      // { nom: "Montage vidéo", niveau: 4 },
+      // { nom: "+ Initiations à Wordpress", niveau: 0 },
+      // { nom: "+ Initiations au SEO", niveau: 0 }
+
       { nom: "HTML, CSS, JavaScript", niveau: 5 },
-      { nom: "figma", niveau: 3 },
-      { nom: "Photoshop", niveau : 4 },
-      { nom: "Montage vidéo", niveau: 4 },
-      { nom: "+ Initiations à Wordpress", niveau: 0 }
+      { nom: "Vue.js, Bootstrap", niveau: 4 },
+      { nom: "WordPress, SEO", niveau: 2 },
+      { nom: "Git, Flutter", niveau: 3 },
+      { nom: "Photoshop, Figma, Montage vidéo", niveau: 4 },
+
+
+
   ],
   experience : [
       {duree : "2024 - 2025, Illiwap, Saint-Etienne", description: "Participation au développement et à la maintenance d’un projet sous Symfony, gestion des tickets clients et correction de bugs. Ce projet à l'écosystème complet (backoffice, site web public, CRM et application mobile) m’a permis  de mieux comprendre les enjeux d’un projet à grande échelle."},
@@ -46,7 +56,9 @@ const info = {
   ],
   hobbies : [
       { nom: "Escalade", description: " pratique du bloc et de la voie" },
-      { nom: "Couture", description: " Confection de vêtements et d’accessoire" }
+      { nom: "Couture", description: " Confection de vêtements et d’accessoire" },
+      { nom: "Images", description: " Créations vidéos" }
+
   ]
   
   }

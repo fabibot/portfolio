@@ -32,19 +32,19 @@
     const route = useRoute()
 
     function getNextPage() {
-    return route.name === 'ComptencesIndex'
+    return route.name != 'Cv'
         ? { name: 'Cv' }
         : { name: 'ComptencesIndex' }
     }
 
     function getNextPageIcon() {
-    return route.name === 'Projets'
+    return route.name != 'Cv'
         ? 'cv'
         : 'navette'
     }
 
     function getNextPageTitle() {
-    return route.name === 'Projets'
+    return route.name != 'Cv'
         ? 'cv'
         : 'portfolio'
     }
