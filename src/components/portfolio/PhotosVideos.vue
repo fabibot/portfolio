@@ -71,7 +71,10 @@ import { ref } from 'vue'
 
 
 function getImagePath (filename) {
-     return new URL(`../../assets/images/competence/photos-videos/${filename}`, import.meta.url).href;
+  console.log(filename);
+    let urltest = new URL(`../../assets/images/competence/photos-videos/${filename}`, import.meta.url).href;
+    console.log(urltest)
+     return urltest;
     }
 
 const scrollHorizontal = (event) => {
@@ -94,7 +97,7 @@ const gallery1 = [
 const gallery2 = [
     { src: "P1140053-retouche3.jpg"},
     { src: "P1130910-retouche7.jpg"},
-    { src: "P1140005.JPG"},
+    { src: "P1140005.jpg"},
     { src: "P1140056-retouche.jpg"},
     { src: "P1140070.jpg"},
     { src: "P1140104-retouche4.jpg"}, 
