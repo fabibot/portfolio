@@ -56,7 +56,7 @@
         </div>
       </div>
       <div class="col-lg-4">
-        <img class="main-img" :src="getImagePath('diplome2.jpg')" alt="illustration principale">  
+        <img class="main-img" :src="getImagePath('diplome2.JPG')" alt="illustration principale">  
       </div>
     </div>
       <div style="height: 60px;"></div>
@@ -71,10 +71,7 @@ import { ref } from 'vue'
 
 
 function getImagePath (filename) {
-  console.log(filename);
-    let urltest = new URL(`../../assets/images/competence/photos-videos/${filename}`, import.meta.url).href;
-    console.log(urltest)
-     return urltest;
+     return new URL(`../../assets/images/competence/photos-videos/${filename}`, import.meta.url).href;
     }
 
 const scrollHorizontal = (event) => {
@@ -84,22 +81,22 @@ const scrollHorizontal = (event) => {
 }
 
 const gallery1 = [
-    { src: "bulle2.jpg"}, 
-    { src: "diplome3.jpg"},
-    { src: "diplome4.jpg"},
-    { src: "bulle3.jpg"},
-    { src: "diplome1.jpg"},
-    { src: "bulle4.jpg"},
-    { src: "bulle5.jpg"},
-    { src: "bulle1.jpg"},
+    { src: "bulle2.JPG"}, 
+    { src: "diplome3.JPG"},
+    { src: "diplome4.JPG"},
+    { src: "bulle3.JPG"},
+    { src: "diplome1.JPG"},
+    { src: "bulle4.JPG"},
+    { src: "bulle5.JPG"},
+    { src: "bulle1.JPG"},
 ]
 
 const gallery2 = [
     { src: "P1140053-retouche3.jpg"},
     { src: "P1130910-retouche7.jpg"},
-    { src: "P1140005.jpg"},
+    { src: "P1140005.JPG"},
     { src: "P1140056-retouche.jpg"},
-    { src: "P1140070.jpg"},
+    { src: "P1140070.JPG"},
     { src: "P1140104-retouche4.jpg"}, 
 ]
 
