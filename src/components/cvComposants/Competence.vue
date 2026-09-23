@@ -24,7 +24,7 @@ export default {
 
 <style>
     .w-competence {
-        width: 365px;
+        width: 465px;
     }
     .case-back {
         z-index: 1;
